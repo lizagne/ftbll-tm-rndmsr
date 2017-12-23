@@ -16,3 +16,8 @@ h1 {
 h2 {
 	font-size: 30px;
 }
+
+input {
+	width: 25em;
+	height: 3em;
+}
