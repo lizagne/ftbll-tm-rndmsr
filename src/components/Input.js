@@ -1,21 +1,53 @@
 import React, { Component } from 'react';
+import PlayerList from './PlayerList';
 
 class Input extends Component {
-	
-	render() {
-		return (
-		<div>
-			<input 
-				placeholder="Enter your team mate..."
-				className="input"/>
-			<input
-				type="submit"
-				className="submitBtn"
-				value="Add"/>
-		</div>
-		)
-	}
-	
-};
+	constructor(props) {
+	    super(props);
+
+	    this.state = { items: [], text: '' };
+
+	    this.onChange = this.onChange.bind(this);
+	    this.onSubmit = this.onSubmit.bind(this);
+  	}
+
+  	onChange(e) {
+    	this.setState({ text: e.target.value });
+  	}
+
+  	onSubmit(e) {
+	    e.preventDefault();
+	    if (!this.state.text.length) {
+	      return;
+	    }
+	    const newItem = {
+	      text: this.state.text,
+	      id: Date.now()
+	    };
+	    this.setState(prevState => ({
+	      items: prevState.items.concat(newItem),
+	      text: ''
+	    }));
+  	}
+
+  	render() {
+    	return (
+      		<div>
+        		<h3>Player's Name</h3>
+        		<form onSubmit={ this.onSubmit }>
+          		<input
+            		onChange={ this.onChange }
+            		value={ this.state.text }
+          		/>
+          		<button>
+            		Add #{ this.state.items.length + 1 }
+          		</button>
+        		</form>
+        		<PlayerList items={ this.state.items } />
+      		</div>
+    	);
+  	}
+}
 
 export default Input;
+

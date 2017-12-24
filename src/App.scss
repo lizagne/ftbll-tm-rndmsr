@@ -1,3 +1,5 @@
+//start of reset/////////////////////////////////////////////////////////////
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,8 +44,9 @@ table {
     border-spacing: 0;
 }
 
+//end of reset/////////////////////////////////////////////////////////////
 
-
+//variables/////////////////////////////////////////////////////////////
 
 $orange: #f23d00;
 $green: #288c1a;
@@ -75,6 +78,7 @@ h2 {
 input, .submitBtn {
     padding: 2px 10px;
     height: 3em;
+    outline: none;
 }
 
 input {
@@ -82,15 +86,12 @@ input {
     font-size: 1.2em;
     border-radius: 8px;
     border: none;
-}
-
-focus {
-
+    margin-top: 20px;
 }
 
 .submitBtn {
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     margin-left: 5px;
     border-radius: 50%;
     background-color: $orange;

@@ -60,17 +60,19 @@ h2 {
 
 input, .submitBtn {
   padding: 2px 10px;
-  height: 3em; }
+  height: 3em;
+  outline: none; }
 
 input {
   width: 25em;
   font-size: 1.2em;
   border-radius: 8px;
-  border: none; }
+  border: none;
+  margin-top: 20px; }
 
 .submitBtn {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   margin-left: 5px;
   border-radius: 50%;
   background-color: #f23d00;
