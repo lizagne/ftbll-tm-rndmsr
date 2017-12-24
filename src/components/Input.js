@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Input = () => (
-	<input 
-		placeholder="Enter your team mate..."
-		className="input"/>
-);
+class Input extends Component {
+	
+	render() {
+		return (
+		<div>
+			<input 
+				placeholder="Enter your team mate..."
+				className="input"/>
+			<input
+				type="submit"
+				className="submitBtn"
+				value="Add"/>
+		</div>
+		)
+	}
+	
+};
 
 export default Input;
