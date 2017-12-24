@@ -64,19 +64,39 @@ input, .submitBtn {
   outline: none; }
 
 input {
-  width: 25em;
+  width: 45%;
   font-size: 1.2em;
   border-radius: 8px;
-  border: none;
-  margin-top: 20px; }
+  border: none; }
+
+.playerForm {
+  margin-top: 2em;
+  background-color: #f23d00;
+  padding: 2em 0 3em 0; }
+  .playerForm h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #fff; }
 
 .submitBtn {
-  width: 4em;
+  width: 6em;
   height: 4em;
-  margin-left: 5px;
-  border-radius: 50%;
-  background-color: #f23d00;
+  font-size: 1em;
+  margin-left: 8px;
+  border-radius: 10%;
+  border: none;
+  background-color: #0431B4;
   color: #fff; }
+
+.playerList {
+  margin-top: 2em;
+  font-size: 1.5em;
+  line-height: 2em; }
+  .playerList li {
+    background-color: #fff;
+    width: 30%;
+    margin: 0.5em auto;
+    padding: 0.5em 0; }
 
 .App {
   text-align: center; }

@@ -32,18 +32,26 @@ class Input extends Component {
 
   	render() {
     	return (
-      		<div>
-        		<h3>Player's Name</h3>
-        		<form onSubmit={ this.onSubmit }>
-          		<input
-            		onChange={ this.onChange }
-            		value={ this.state.text }
-          		/>
-          		<button>
-            		Add #{ this.state.items.length + 1 }
-          		</button>
-        		</form>
-        		<PlayerList items={ this.state.items } />
+    		<div>
+	      		<div className="playerForm">
+	        		<h3>Player's Name:</h3>
+	        		<form onSubmit={ this.onSubmit }>
+	          		<input
+	            		onChange={ this.onChange }
+	            		value={ this.state.text }
+	            		placeholder="Enter your player's name..."
+	          		/>
+	          		<button className="submitBtn">
+	            		Add #{ this.state.items.length + 1 }
+	          		</button>
+	        		</form>
+	      		</div>
+
+	      		<div className="playerList">
+	      		<h3> Your Team Players: </h3>
+	      		<PlayerList items={ this.state.items } />
+	      		</div>
+
       		</div>
     	);
   	}
