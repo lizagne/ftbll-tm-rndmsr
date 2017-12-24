@@ -38,11 +38,17 @@ The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so
 
 2. It should have a button that has 'Generate Team' or 'Pick your team' on it, which when pressed will places the 10 names into 5 a side teams.
 
-## Additional Notes on Saturday 23rd after, 1st Draft of Wireframe (see pdf attached) initial set up and first changes:
+### Additional Notes on Saturday 23rd after 1st draft of Wireframe (see pdf attached) initial set up and first changes:
 1. have set up SASS on my project
 2. Also have set up a background and the logo and favicon - this has allowed me to help with the formatting
 3. Adding an input and thinking about the best way the user interface could work.
 4. Will now do some more research into other apps to get some more ideas.
+
+### Sunday 24th Notes:
+1. Have managed to get the input to add names to an initial list below.
+2. Need to write some logic that disables the add button after 10 names are entered.
+3. Would like to have some visual boxes, maybe dotted lines in the space in the middle for the start of the page, so that it's obvious there whould be players names entered. (Will make a new wireframe draft 2).
+4. Need to figure out where to put randomise button.
 
 ### Checklist
 1. Check accessibility and responsiveness when the project is nearing the end.
