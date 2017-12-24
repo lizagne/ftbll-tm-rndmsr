@@ -8,8 +8,9 @@ import logo from '../logo.svg';
 const Header = () => (
 	<div>
         <header className="App-header">
-	        <img src={ logo } className="App-logo" alt="football-logo" />
-	        <h1>Ftbll Tm Rndmisr </h1>
+	        
+	        <h1><img src={ logo } className="App-logo" alt="football-logo" />
+	        	Ftbll Tm Rndmisr </h1>
 	        <h2>Pick your teams</h2>
         </header>
     </div>
