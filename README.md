@@ -44,6 +44,13 @@ The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so
 3. Adding an input and thinking about the best way the user interface could work.
 4. Will now do some more research into other apps to get some more ideas.
 
+### Checklist
+1. Check accessibility and responsiveness when the project is nearing the end.
+2. Testing with friends, family and unit testing
+3. Write up how to run it on another machine
+4. Send supporting documentation
+
+
 ## Styling
 There could be a background of a birds-eye view of a football pitch - so green grass with white stripes...can this be done with CSS? Ideas: https://codepen.io/eyecandy91/pen/dXLjNG  https://codepen.io/oloman/pen/ynJcl  https://codepen.io/paulnoble/pen/PwOxOY. With CSS I can easily do stripes like this: https://thumb1.shutterstock.com/display_pic_with_logo/3910382/568052803/stock-vector-football-pitch-icon-on-white-background-football-pitch-sign-symbol-568052803.jpg.
 
