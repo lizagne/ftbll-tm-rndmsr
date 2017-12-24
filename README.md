@@ -49,7 +49,10 @@ The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so
 2. Need to write some logic that disables the add button after 10 names are entered.
 3. Would like to have some visual boxes, maybe dotted lines in the space in the middle for the start of the page, so that it's obvious there whould be players names entered. (Will make a new wireframe draft 2).
 4. Need to figure out where to put randomise button.
-
+5. Also need to add some logic ideally to capitalise the first letter of each word entered, something like: 
+``str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+return letter.toUpperCase();
+});``
 ### Checklist
 1. Check accessibility and responsiveness when the project is nearing the end.
 2. Testing with friends, family and unit testing
