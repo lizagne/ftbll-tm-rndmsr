@@ -42,7 +42,7 @@ class Input extends Component {
 	            		placeholder="Enter your player's name..."
 	          		/>
 	          		<button className="submitBtn">
-	            		{ this.state.items.length <= 9 ? "Add #" + (this.state.items.length + 1) : 'Done' }
+	            		Add #{ this.state.items.length + 1 }
 	          		</button>
 	        		</form>
 	      		</div>

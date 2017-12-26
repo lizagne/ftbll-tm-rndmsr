@@ -51,10 +51,9 @@ body {
   color: #231f20; }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: 'Alfa Slab One', cursive;
-  letter-spacing: 0.04em;
-  margin-top: 0; }
+  letter-spacing: 0.04em; }
 
 h2 {
   font-size: 2em; }
@@ -65,21 +64,13 @@ input, .submitBtn {
   outline: none; }
 
 input {
-  width: 35%;
+  width: 45%;
   font-size: 1.2em;
   border-radius: 8px;
   border: none; }
 
-.App {
-  text-align: center; }
-
-.App-logo {
-  animation: App-logo-spin infinite 5s linear;
-  height: 1.2em;
-  margin: 20px 10px 0 0; }
-
 .playerForm {
-  margin-top: 1em;
+  margin-top: 2em;
   background-color: #f23d00;
   padding: 2em 0 3em 0; }
   .playerForm h3 {
@@ -89,6 +80,7 @@ input {
 
 .submitBtn {
   width: 6em;
+  height: 4em;
   font-size: 1em;
   margin-left: 8px;
   border-radius: 10%;
@@ -97,21 +89,22 @@ input {
   color: #fff; }
 
 .playerList {
-  margin-top: 0.5em;
+  margin-top: 2em;
   font-size: 1.5em;
-  line-height: 2em;
-  font-weight: bold;
-  color: #fff; }
+  line-height: 2em; }
   .playerList li {
-    font-size: 0.8em;
-    font-family: 'Alfa Slab One', cursive;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: #231f20;
     background-color: #fff;
     width: 30%;
     margin: 0.5em auto;
-    padding: 0.2em 0; }
+    padding: 0.5em 0; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  margin-top: 50px; }
 
 @keyframes App-logo-spin {
   from {
