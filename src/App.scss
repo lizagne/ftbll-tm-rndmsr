@@ -1,37 +1,148 @@
+//start of reset/////////////////////////////////////////////////////////////
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 body {
-    background-color: #288c1a;
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+//end of reset/////////////////////////////////////////////////////////////
+
+//variables/////////////////////////////////////////////////////////////
+
+$orange: #f23d00;
+$green: #288c1a;
+$white: #fff;
+$black: #231f20;
+$blue: #0431B4;
+
+
+body {
+    background-color: $green;
     background-image: linear-gradient(90deg, transparent 50%, rgba(29,120,29,.5) 50%);
-    background-size: 100px 100px;
+    background-size: 10em 10em;
 
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $black;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5em;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 0.04em;
+    margin-top: 0;
 }
 
-
 h2 {
-    font-size: 30px;
+    font-size: 2em;
+}
+
+input, .submitBtn {
+    padding: 2px 10px;
+    height: 3em;
+    outline: none;
 }
 
 input {
-    width: 25em;
-    height: 3em;
+    width: 35%;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
 }
-
 
 .App {
     text-align: center;
 }
 
 .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-    margin-top: 50px;
+    animation: App-logo-spin infinite 5s linear;
+    height: 1.2em;
+    margin: 20px 10px 0 0;
 }
+
+.playerForm {
+    margin-top: 1em;
+    background-color: $orange;
+    padding: 2em 0 3em 0;
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        color: $white;
+    }
+}
+
+.submitBtn {
+    width: 6em;
+    font-size: 1em;
+    margin-left: 8px;
+    border-radius: 10%;
+    border: none;
+    background-color: $blue;
+    color: $white;
+}
+
+.playerList {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: bold;
+    color: $white;
+
+    li {
+        font-size: 0.8em;
+        font-family: 'Alfa Slab One', cursive;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: $black;
+
+        background-color: $white;
+        width: 30%;
+        margin: 0.5em auto;
+        padding: 0.2em 0;
+    }
+}
+
 
 @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
