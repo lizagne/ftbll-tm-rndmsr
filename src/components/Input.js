@@ -37,12 +37,9 @@ class Input extends Component {
 	        		<h3>Player's Name:</h3>
 	        		<form onSubmit={ this.onSubmit }>
 	          		<input
-	          			type="text"
-	          			maxLength="20"
-	          			minLength="1"
 	            		onChange={ this.onChange }
 	            		value={ this.state.text }
-	            		placeholder="Enter a player's name..."
+	            		placeholder="Enter your player's name..."
 	          		/>
 	          		<button className="submitBtn">
 	            		{ this.state.items.length <= 9 ? "Add #" + (this.state.items.length + 1) : 'Done' }
@@ -61,6 +58,4 @@ class Input extends Component {
 }
 
 export default Input;
-
-//I think the ternary here needs to be an if statement because I want to make the button disabled as well as change the word inside.
 
