@@ -51,6 +51,9 @@ The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so
 4. Need to figure out where to put randomise button.
 5. I have to make sure that the text entered does meet text requirements, should be no longer than 50 characters, and must be letters, not numbers or spaces or empty.
 
+### Tuesday 26th Dec Notes:
+I got a bit stuck with adding in Redux, and after lots of back and forth and looking over older work and tutorials with React and Redux, I kind of want to go back to the drawing board, both in terms of layout and in terms of approach. I will remake a 2nd draft of the wireframe first thing tomorrow (it's 23:14) and re-structure the app in the morning too! I want to make it more horizontal so everything can fit within the fold, also have 10 inputs, so that it's clear immediately that the app needs to take 10 names.
+
 ### Checklist
 1. Check accessibility and responsiveness when the project is nearing the end.
 2. Testing with friends, family and unit testing
