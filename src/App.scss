@@ -54,6 +54,18 @@ $white: #fff;
 $black: #231f20;
 $blue: #0431B4;
 
+//global styles
+.App {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 5s linear;
+    height: 1.2em;
+    margin: 20px 10px 0 0;
+}
+
 
 body {
     background-color: $green;
@@ -77,32 +89,38 @@ h2 {
     font-size: 2em;
 }
 
+//the form
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+}
+
 input, .submitBtn {
     padding: 2px 10px;
-    height: 3em;
+    height: 2em;
     outline: none;
 }
 
+.addBtn {
+    width: 10%;
+    padding: 10px 5px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
 input {
-    width: 35%;
+    width: 25%;
     font-size: 1.2em;
-    border-radius: 8px;
+    border-radius: 4px;
     border: none;
-}
-
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    animation: App-logo-spin infinite 5s linear;
-    height: 1.2em;
-    margin: 20px 10px 0 0;
+    margin: 5px 5px 0 0;
 }
 
 .playerForm {
     margin-top: 1em;
-    background-color: $orange;
+    // background-color: $orange;
     padding: 2em 0 3em 0;
 
     h3 {
@@ -113,10 +131,10 @@ input {
 }
 
 .submitBtn {
-    width: 6em;
+    width: 5em;
     font-size: 1em;
     margin-left: 8px;
-    border-radius: 10%;
+    border-radius: 4px;
     border: none;
     background-color: $blue;
     color: $white;
