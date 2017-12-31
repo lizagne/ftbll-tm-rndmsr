@@ -10,8 +10,7 @@ class Form extends Component {
             name: '',
         }
 
-        this.handleSubmit = this.handleSubmit.bind(this)
-
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit = event => {

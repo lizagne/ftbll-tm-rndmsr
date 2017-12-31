@@ -6,6 +6,8 @@ import Form from "./components/Form";
 // import InputForm from './containers/InputForm';
 // import Options from './containers/Options';
 // import TeamOutput from '/containers/TeamOutput';
+import { connect } from 'react-redux';
+import { addPlayerActionCreator } from './actions/ActionCreators';
 
 class App extends Component {
 
@@ -29,4 +31,21 @@ class App extends Component {
     }
 }
 
-export default App;
+// export default App;
+
+const mapStateToProps = (state) => {
+    return {
+        players: state.players,
+        teams: state.teams
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addPlayer: (player) => {
+            dispatch(addPlayerActionCreator(player));
+        },
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -3,24 +3,17 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import App from './App';
 
-// import { Provider } from 'react-redux';
-// import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-// import reducer from './data/reducer';
+import Reducer from './data/Reducer';
 
-// const store = createStore(reducer);
-
+const store = createStore(Reducer);
 
 ReactDOM.render(
-		<App />,
-
+	<Provider store={ store }>
+		<App />
+	</Provider>,
 	 document.getElementById('root')
 );
 
-
-// ReactDOM.render(
-// 	<Provider store={ store }>
-// 		<App />
-// 	</Provider>,
-// 	 document.getElementById('root')
-// );
