@@ -3,7 +3,6 @@ import Form from './Form';
 import TeamList from './TeamList';
 import TeamGenerator from './TeamGenerator';
 import Header from './Header';
-import Test from './Test.js';
 
 import '../css/style.css';
 

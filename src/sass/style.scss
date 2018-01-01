@@ -2,28 +2,48 @@
 $green: #498b2d;
 $darkGreen: #264408;
 
+//fonts:
+$body-font: 'Roboto Condensed', sans-serif;
+$header-font: 'Alfa Slab One', cursive;
+$font-space: 2px;
 
 body {
 	background-color: $darkGreen;
 	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.02) 50%);
 	background-size: 100px 100px;
 	margin: 0 auto;
+	font-family: $body-font;
+	letter-spacing: $font-space;
+}
+
+h1, {
+	font-family: $header-font;
+	letter-spacing: $font-space;
+	margin: 10 0 0 0;
+}
+
+h2, h3, h4, h5 {
+	font-family: $body-font;
+	margin: 0;
 }
 
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 50px;
-  margin-right: 10px;
+.App-logo, .App-logo1 {
+	animation: App-logo-spin infinite 10s linear;
+	height: 50px;
+	margin-right: 10px;
+}
+
+.App-logo1 {
+	margin-left: 10px;
 }
 
 .App-header {
-  height: 100px;
-  padding: 10px;
-  color: white;
+	height: 100px;
+	color: white;
 }
 
 .App-title {
@@ -34,9 +54,8 @@ body {
   font-size: large;
 }
 
-
-
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

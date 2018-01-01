@@ -2,19 +2,32 @@ body {
   background-color: #264408;
   background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%);
   background-size: 100px 100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px; }
+
+h1 {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 2px;
+  margin: 10 0 0 0; }
+
+h2, h3, h4, h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0; }
 
 .App {
   text-align: center; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.App-logo, .App-logo1 {
+  animation: App-logo-spin infinite 10s linear;
   height: 50px;
   margin-right: 10px; }
 
+.App-logo1 {
+  margin-left: 10px; }
+
 .App-header {
   height: 100px;
-  padding: 10px;
   color: white; }
 
 .App-title {
