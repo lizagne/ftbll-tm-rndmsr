@@ -4,18 +4,19 @@ body {
   background-size: 100px 100px;
   margin: 0 auto;
   font-family: "Roboto Condensed", sans-serif;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 25px; }
 
 h1 {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 2px;
   margin: 0;
-  color: white; }
+  color: #fff; }
 
 h2, h3, h4, h5 {
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
-  color: white; }
+  color: #fff; }
 
 header {
   margin-top: 20px; }
@@ -25,13 +26,38 @@ input {
   padding: 5px;
   font-size: 20px; }
 
+.lead {
+  width: 80%;
+  margin: 20px auto;
+  line-height: 25px;
+  color: #fff; }
+
+.teams {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 35px;
+  height: 50em; }
+
+.edit {
+  margin-right: 5px; }
+
 .container {
   display: flex;
   justify-content: space-around;
-  margin-top: 45px; }
+  margin: 25px auto;
+  padding: 20px; }
 
 .input-group {
-  width: 60%; }
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%; }
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 50%; }
 
 .input {
   width: 100%;
@@ -42,14 +68,28 @@ input {
   margin-left: 20px; }
 
 .list-group {
-  width: 50%; }
+  width: 100%;
+  margin-bottom: 5px; }
 
 .list-group-item {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px; }
+
+.card {
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 30px;
+  line-height: 35px; }
+
+.team-output {
+  margin-top: 30px; }
 
 .App {
   text-align: center;
-  color: #999; }
+  padding: 20px 100px;
+  color: #333; }
 
 .App-logo, .App-logo1 {
   animation: App-logo-spin infinite 10s linear;

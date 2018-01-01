@@ -45,25 +45,22 @@ class Player extends Component {
                         value={ this.props.data.name } 
                         onChange={ event => this.handleNameEdit(event, this.props.data) }
                     /> :
-                <span 
-                    className="playerList" 
-                    // onMouseEnter={ () => { this.mouseEnter() } }
-                    // onMouseLeave={ () => { this.mouseExit() } }
-                >
+
                     <ul className="list-group">
                         <li className="list-group-item">{ this.props.data.name }
-                            <button 
-                                className="btn btn-warning btn-xs edit" 
-                                onClick={ () => { this.toggleEditMode() } }>Update
-                            </button>
+                            <div className="buttons">
+                                <button 
+                                    className="btn btn-warning btn-xs edit" 
+                                    onClick={ () => { this.toggleEditMode() } }>Edit
+                                </button>
 
-                            <button 
-                                className="btn btn-danger btn-xs suppr" 
-                                onClick= { () => { this.removePlayer(this.props.data) } }>Delete
-                            </button> 
+                                <button 
+                                    className="btn btn-danger btn-xs delete" 
+                                    onClick= { () => { this.removePlayer(this.props.data) } }>Delete
+                                </button> 
+                            </div>
                         </li>
                     </ul>
-                </span>
             }  
 
             </div>

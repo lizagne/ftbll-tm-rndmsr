@@ -36,23 +36,24 @@ class TeamGenerator extends Component {
     }
 
         return(
-            <div className="col-sm-8">
-             
-                { this.props.players.length >= 4 && this.props.players.length%2===0 ?
+            <div className="col-sm-12 teams">
+                <div>
+                { this.props.players.length >= 10 ?
                     <span>
                         <button className="btn btn-danger reset btn-md" onClick={ this.onClickReset }>Reset</button>
                         <button className="teamGen btn btn-primary " onClick={ this.handleClick }>Generate Teams</button>
                     </span> : null }
+                </div>    
 
-                <div className="row">
-                    <span className="team col-sm-6" >
+                <div className="row team-output">
+                    <span className="col-sm-6" >
                         { this.state.show === true && this.props.players !== undefined ? 
-                            <h4 className="teams">Team A</h4> : null }
+                            <h2 className="teamName">Team A</h2> : null }
                         { teamListA }
                     </span>
 
-                    <span className="team col-sm-6">
-                        { this.state.show === true ? <h4 className="teams">Team B</h4> : null }
+                    <span className="col-sm-6">
+                        { this.state.show === true ? <h2 className="teamName">Team B</h2> : null }
                         { teamListB }
                     </span>
                 </div>

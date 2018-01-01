@@ -1,33 +1,39 @@
 //set up colors:
 $green: #498b2d;
 $darkGreen: #264408;
-$grey: #999;
+$grey: #333;
+$white: #fff;
+$transparentWhite: rgba(255,255,255,.5);
+$orange: #ff9a00;
 
 //fonts:
-$body-font: 'Roboto Condensed', sans-serif;
-$header-font: 'Alfa Slab One', cursive;
+$condensed-font: 'Roboto Condensed', sans-serif;
+$wide-font: 'Alfa Slab One', cursive;
 $font-space: 2px;
+$leading-body: 25px;
+$leading-header: 35px;
 
 body {
 	background-color: $darkGreen;
 	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.02) 50%);
 	background-size: 100px 100px;
 	margin: 0 auto;
-	font-family: $body-font;
+	font-family: $condensed-font;
 	letter-spacing: $font-space;
+	line-height: $leading-body;
 }
 
 h1, {
-	font-family: $header-font;
+	font-family: $wide-font;
 	letter-spacing: $font-space;
 	margin: 0;
-	color: white;
+	color: $white;
 }
 
 h2, h3, h4, h5 {
-	font-family: $body-font;
+	font-family: $condensed-font;
 	margin: 0;
-	color: white;
+	color: $white;
 }
 
 header {
@@ -40,13 +46,44 @@ input {
 	font-size: 20px;
 }
 
+.lead {
+	width: 80%;
+	margin: 20px auto;
+	line-height: $leading-body;
+	color: $white;
+}
+
+.teams {
+	background-color: $transparentWhite;
+	padding: 35px;
+	height: 50em;
+}
+
+.edit {
+	margin-right: 5px;
+}
+
 .container {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 45px;
+	margin: 25px auto;
+	// background-color: $orange;
+	padding: 20px;
 }
+
 .input-group {
-	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	margin: 0 auto;
+	width: 100%;
+}
+
+form{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	width: 50%;
 }
 
 .input {
@@ -60,16 +97,31 @@ input {
 }
 
 .list-group {
-	width: 50%;
+	width: 100%;
+	margin-bottom: 5px;
 }
 
 .list-group-item {
 	text-transform: capitalize;
-	// border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.card {
+	text-transform: uppercase;
+	font-family: $wide-font;
+	font-size: 30px;
+	line-height: $leading-header;
+}
+
+.team-output {
+	margin-top: 30px;
 }
 
 .App {
 	text-align: center;
+	padding: 20px 100px;
 	color: $grey;
 }
 

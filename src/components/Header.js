@@ -13,6 +13,8 @@ const Header = () => (
         	<img src={ logo } className="App-logo1" alt="football-logo" />
 	        </h1>
 	        <h2>Pick your teams</h2>
+
+            <p className="lead"> Enter 10 names to generate two random teams.</p>
         </header>
     </div>
 );

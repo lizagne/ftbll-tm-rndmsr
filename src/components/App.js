@@ -28,27 +28,28 @@ class App extends Component {
                 <div className="col-sm-12">
 
                     <Header />
+                        <div className="main-content">
+                            <div>
+                                <Form addPlayer={this.props.addPlayer} />
+                                <TeamList
+                                    players={ this.props.players } 
+                                    addPlayer={ this.props.addPlayer } 
+                                    editPlayer={ this.props.editPlayer } 
+                                    deletePlayer={this.props.deletePlayer } 
+                                />
+                            </div>
 
-                    <Form addPlayer={this.props.addPlayer} />
-
-                    <TeamList 
-                        players={ this.props.players } 
-                        addPlayer={ this.props.addPlayer } 
-                        editPlayer={ this.props.editPlayer } 
-                        deletePlayer={this.props.deletePlayer } 
-                    />
-                    </div>
-
-                    <div className="col-sm-4">
-
-                    <TeamGenerator  
-                        generateTeam={ this.props.generateTeam } 
-                        teams={ this.props.teams } 
-                        players={ this.props.players } 
-                        resetAll={ this.props.resetAll }
-                    />
+                            <div className="col-sm-8">
+                                <TeamGenerator
+                                    generateTeam={ this.props.generateTeam } 
+                                    teams={ this.props.teams } 
+                                    players={ this.props.players } 
+                                    resetAll={ this.props.resetAll }
+                                />
+                            </div>
+                        </div>    
                 </div>
-            </div>
+            </div> 
         );
     }
 }
