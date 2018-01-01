@@ -1,24 +1,22 @@
 {
-  "name": "football-teams",
+  "name": "broodwar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "immutable": "^3.8.2",
-    "node-sass-chokidar": "^0.0.3",
-    "normalize.css": "^7.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^16.0.0",
+    "react-flexbox-grid": "^1.1.5",
     "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "redux": "^3.7.2"
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "devDependencies": {}
 }

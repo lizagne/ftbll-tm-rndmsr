@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
-// import '../style.css';
+import '../style.css';
 
 class Form extends Component {
-    
-    constructor(props){
-       super(props)
 
-        this.state = {
-            name: '',
-        }
-
-        this.handleSubmit = this.handleSubmit.bind(this);
+    state = {
+        name: ''
     }
 
-    handleSubmit = event => {
+    handleSubmit = (event) => {
         event.preventDefault();
         this.props.addPlayer(this.state);
         this.setState({ name: '' });
@@ -21,32 +15,39 @@ class Form extends Component {
 
     render() {
         return (
-            <div>
+            <div className="">
+
                 <div className="container">
-                <div className="input-group">
 
-                <form onSubmit={ this.handleSubmit }>
+                    <div className="input-group">
 
-                <input 
-                    type="text" 
-                    className="input" 
-                    placeholder="Player's name" 
-                    value={ this.state.name } 
-                    onChange={ event => this.setState({ name: event.target.value }) }  />
+                        <form onSubmit={ this.handleSubmit }>
 
-                <span>
-                    <button type="submit" className="btn btn-primary button btn-md" disabled={ !this.state.name }>Add player</button>
-                </span>
+                            <input 
+                                type="text" 
+                                className="input" 
+                                placeholder="nickname" 
+                                value={ this.state.name } 
+                                onChange={ event => this.setState({ name: event.target.value }) }  
+                            />
 
-                </form>
+                            <span className="">
+                                <button 
+                                    type="submit" 
+                                    className="btn btn-primary button btn-md" 
+                                    disabled={ !this.state.name }>Add player
+                                </button>
+                            </span>
+
+                        </form>
+
+                    </div>
 
                 </div>
-                </div>
+
             </div>
         )
-    
     }
 }
-
 
 export default Form;
