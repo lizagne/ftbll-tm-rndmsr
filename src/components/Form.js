@@ -26,17 +26,13 @@ class Form extends Component {
                             className="input" 
                             placeholder="Player's name..." 
                             value={ this.state.name } 
-                            onChange={ event => this.setState({ name: event.target.value }) }  
-                        />
+                            onChange={ event => this.setState({ name: event.target.value }) }/>
 
-                        <span className="">
-                            <button 
-                                type="submit" 
-                                className="btn btn-primary button btn-md" 
-                                disabled={ !this.state.name }>Add player
-                            </button>
-                        </span>
-
+                        <button 
+                            type="submit" 
+                            className="btn btn-primary button btn-md" 
+                            disabled={ !this.state.name }>Add player
+                        </button>
                     </form>
 
                 </div>

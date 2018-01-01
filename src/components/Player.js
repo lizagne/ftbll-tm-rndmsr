@@ -8,14 +8,6 @@ class Player extends Component {
         hover: false  
     }
 
-    mouseEnter = () => {
-        this.setState({ hover: !this.state.hover });
-    }
-
-    mouseExit = () => {
-        this.setState({ hover: !this.state.hover });
-    }
-
     toggleEditMode = () => {
         this.setState({ isInEditMode: !this.state.isInEditMode });
     }
@@ -44,25 +36,32 @@ class Player extends Component {
                         className="btn btn-danger btn-xs suppr" 
                         onClick= { () => { this.removePlayer(this.props.data) } }>Delete
                     </button>  
-                </div> : null           
-            } 
+                </div> : null } 
       
             { this.state.isInEditMode === true ? 
-                <span>
                     <input 
                         className="input" 
                         type="text" 
                         value={ this.props.data.name } 
                         onChange={ event => this.handleNameEdit(event, this.props.data) }
-                    />
-                </span> :
+                    /> :
                 <span 
                     className="playerList" 
-                    onMouseEnter={ () => { this.mouseEnter() } }
-                    onMouseLeave={ () => { this.mouseExit() } }
+                    // onMouseEnter={ () => { this.mouseEnter() } }
+                    // onMouseLeave={ () => { this.mouseExit() } }
                 >
                     <ul className="list-group">
-                        <li className="list-group-item">{ this.props.data.name }</li>
+                        <li className="list-group-item">{ this.props.data.name }
+                            <button 
+                                className="btn btn-warning btn-xs edit" 
+                                onClick={ () => { this.toggleEditMode() } }>Update
+                            </button>
+
+                            <button 
+                                className="btn btn-danger btn-xs suppr" 
+                                onClick= { () => { this.removePlayer(this.props.data) } }>Delete
+                            </button> 
+                        </li>
                     </ul>
                 </span>
             }  

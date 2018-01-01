@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import '../css/style.css';
 
 class TeamGenerator extends Component {
-
     constructor(props){
         super(props)
     
         this.state={
             teams:'',
-            show: false,
+            show: false
         }
     }
 
@@ -39,21 +38,21 @@ class TeamGenerator extends Component {
         return(
             <div className="col-sm-8">
              
-                { this.props.players.length > 2  ?
+                { this.props.players.length >= 4 && this.props.players.length%2===0 ?
                     <span>
-                        <button className="btn btn-danger reset btn-md" onClick={ this.onClickReset }>Reset</button>     
+                        <button className="btn btn-danger reset btn-md" onClick={ this.onClickReset }>Reset</button>
                         <button className="teamGen btn btn-primary " onClick={ this.handleClick }>Generate Teams</button>
                     </span> : null }
 
                 <div className="row">
                     <span className="team col-sm-6" >
                         { this.state.show === true && this.props.players !== undefined ? 
-                            <h4 className="sc">Team A</h4> : null }
+                            <h4 className="teams">Team A</h4> : null }
                         { teamListA }
                     </span>
 
                     <span className="team col-sm-6">
-                        { this.state.show === true ? <h4 className="sc">Team B</h4> : null }
+                        { this.state.show === true ? <h4 className="teams">Team B</h4> : null }
                         { teamListB }
                     </span>
                 </div>
