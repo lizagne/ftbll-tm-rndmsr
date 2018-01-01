@@ -5,7 +5,7 @@ import TeamGenerator from './TeamGenerator';
 import Header from './Header';
 import Test from './Test.js';
 
-import '../style.css';
+import '../css/style.css';
 
 import { connect } from 'react-redux';
 
