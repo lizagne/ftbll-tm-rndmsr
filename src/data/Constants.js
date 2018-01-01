@@ -1,4 +1,4 @@
-//create the constants for the whole app.
+//set up the constants to be referenced in the action creators
 
 export const ADD_PLAYER = 'ADD_PLAYER';
 export const EDIT_PLAYER = 'EDIT_PLAYER';
