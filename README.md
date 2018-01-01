@@ -54,6 +54,16 @@ The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so
 ### Tuesday 26th Dec Notes:
 I got a bit stuck with adding in Redux, and after lots of back and forth and looking over older work and tutorials with React and Redux, I kind of want to go back to the drawing board, both in terms of layout and in terms of approach. I will remake a 2nd draft of the wireframe first thing tomorrow (it's 23:14) and re-structure the app in the morning too! I want to make it more horizontal so everything can fit within the fold, also have 10 inputs, so that it's clear immediately that the app needs to take 10 names.
 
+### Monday 1st Jan Notes:
+Since Boxing Day, I went over a lot of other React and separate stuff, I started again a couple of times after going back over Redux and React tutorials and workshops. I decided to go back to simplyfying the idea. I've now got to a stage where the user can enter names, the names get outputted to the left of the screen, these names come with an Edit and a Delete button. Then when 10 names have been entered the Reset and Generate buttons appear. Reset takes everything but the header and the input away from the screen, and Generate button generates two teams, these will then be shuffled when the user represses the generate button.
+
+Things TODO:
+1. Try and get a balancing skills section in, with stars, or points
+2. Add some more styling to the scoreboard area
+3. Refactor a lot of the code
+4. Move the MapDispatchToProps and ..State to their own pages
+5. Try to put the functionality for the randomising into a smaller function from lodash - called shuffle
+
 ### Checklist
 1. Check accessibility and responsiveness when the project is nearing the end.
 2. Testing with friends, family and unit testing
