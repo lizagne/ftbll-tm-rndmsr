@@ -26,7 +26,7 @@ gulp.task('styles', function(callback){
 });
 
 //set up the watch task which will be passing the combination of the two functions, SASS and minify-css
-gulp.task('default',function() {
+gulp.task('watch',function() {
     gulp.watch('./src/sass/style.scss',['styles']);
 });
 

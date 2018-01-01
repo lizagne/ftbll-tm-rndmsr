@@ -24,9 +24,9 @@ class App extends Component {
 
     render() {
         return (
-            <div className="img">
+            <div className="App">
 
-                <div className="col-sm-4">
+                <div className="col-sm-12">
 
                     <Header />
 

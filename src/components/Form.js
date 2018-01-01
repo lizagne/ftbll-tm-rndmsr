@@ -26,7 +26,7 @@ class Form extends Component {
                             <input 
                                 type="text" 
                                 className="input" 
-                                placeholder="nickname" 
+                                placeholder="Player's name..." 
                                 value={ this.state.name } 
                                 onChange={ event => this.setState({ name: event.target.value }) }  
                             />

@@ -1,1 +1,1 @@
-body{background-color:green}
+body{background-color:#264408;background-image:linear-gradient(90deg,transparent 50%,rgba(255,255,255,.2) 50%);background-size:50px 50px;margin:0 auto}.App{text-align:center}.App-logo{animation:App-logo-spin infinite 20s linear;height:50px;margin-right:10px}.App-header{height:100px;padding:10px;color:#fff}.App-title{font-size:1.2em}.App-intro{font-size:large}@keyframes App-logo-spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
