@@ -9,14 +9,20 @@ body {
 h1 {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 2px;
-  margin: 10 0 0 0; }
+  margin: 0;
+  color: white; }
 
 h2, h3, h4, h5 {
   font-family: "Roboto Condensed", sans-serif;
-  margin: 0; }
+  margin: 0;
+  color: white; }
+
+header {
+  margin-top: 20px; }
 
 .App {
-  text-align: center; }
+  text-align: center;
+  color: #999; }
 
 .App-logo, .App-logo1 {
   animation: App-logo-spin infinite 10s linear;
@@ -26,15 +32,9 @@ h2, h3, h4, h5 {
 .App-logo1 {
   margin-left: 10px; }
 
-.App-header {
-  height: 100px;
-  color: white; }
-
-.App-title {
-  font-size: 1.2em; }
-
-.App-intro {
-  font-size: large; }
+.football-form {
+  text-align: center;
+  margin: 0 auto; }
 
 @keyframes App-logo-spin {
   from {

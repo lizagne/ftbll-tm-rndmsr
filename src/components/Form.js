@@ -15,33 +15,29 @@ class Form extends Component {
 
     render() {
         return (
-            <div className="">
+            <div className="container">
 
-                <div className="container">
+                <div className="input-group">
 
-                    <div className="input-group">
+                    <form onSubmit={ this.handleSubmit }>
 
-                        <form onSubmit={ this.handleSubmit }>
+                        <input 
+                            type="text" 
+                            className="input" 
+                            placeholder="Player's name..." 
+                            value={ this.state.name } 
+                            onChange={ event => this.setState({ name: event.target.value }) }  
+                        />
 
-                            <input 
-                                type="text" 
-                                className="input" 
-                                placeholder="Player's name..." 
-                                value={ this.state.name } 
-                                onChange={ event => this.setState({ name: event.target.value }) }  
-                            />
+                        <span className="">
+                            <button 
+                                type="submit" 
+                                className="btn btn-primary button btn-md" 
+                                disabled={ !this.state.name }>Add player
+                            </button>
+                        </span>
 
-                            <span className="">
-                                <button 
-                                    type="submit" 
-                                    className="btn btn-primary button btn-md" 
-                                    disabled={ !this.state.name }>Add player
-                                </button>
-                            </span>
-
-                        </form>
-
-                    </div>
+                    </form>
 
                 </div>
 

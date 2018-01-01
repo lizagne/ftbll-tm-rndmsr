@@ -59,7 +59,7 @@ class Player extends Component {
                 <span 
                     className="playerList" 
                     onMouseEnter={ () => { this.mouseEnter() } }
-                    onMouseLeave={ () => { this.mouseExit } }
+                    onMouseLeave={ () => { this.mouseExit() } }
                 >
                     <ul className="list-group">
                         <li className="list-group-item">{ this.props.data.name }</li>

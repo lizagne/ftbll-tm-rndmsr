@@ -6,12 +6,11 @@ import logo from '../logo.svg';
 
 const Header = () => (
 	<div>
-        <header className="App-header">
-	        
+        <header>
 	        <h1>
-	        	<img src={ logo } className="App-logo" alt="football-logo" />
-	        	Ftbll Tm Rndmisr 
-	        	<img src={ logo } className="App-logo1" alt="football-logo" />
+        	<img src={ logo } className="App-logo" alt="football-logo" />
+        	Ftbll Tm Rndmisr 
+        	<img src={ logo } className="App-logo1" alt="football-logo" />
 	        </h1>
 	        <h2>Pick your teams</h2>
         </header>

@@ -27,12 +27,12 @@ class TeamGenerator extends Component {
         let teamListB = this.props.teams
 
       
-        if (this.props.teams.teams !== undefined || null) {
-            teamListA = this.props.teams.teams[0].map( (player, index) => {
-            return (<div className="card"><p key={ index }>{ player.name }</p></div>)
+        if(this.props.teams.teams !== undefined || null) {
+            teamListA = this.props.teams.teams[0].map((player, index) => {
+            return (<div className="card" key={ index }><p>{ player.name }</p></div>)
         })
-            teamListB = this.props.teams.teams[1].map( (player, index) => {
-            return (<div className="card"><p key={ index }>{ player.name }</p></div>)
+            teamListB = this.props.teams.teams[1].map((player, index) => {
+            return (<div className="card" key={ index }><p>{ player.name }</p></div>)
         })
     }
 
