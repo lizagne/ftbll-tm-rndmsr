@@ -13,11 +13,13 @@ class TeamGenerator extends Component {
         }
     }
 
+    //this is the event handler for resetting
     onClickReset = () => {
        this.props.resetAll();
        this.setState({ show: false });
     }
 
+    //event handler for the team generation button
     handleClick = () => {
         this.props.generateTeam();
         this.setState({show: true});    
@@ -26,14 +28,13 @@ class TeamGenerator extends Component {
     render() {
         let teamListA = this.props.teams
         let teamListB = this.props.teams
-
       
-        if(this.props.teams.teams !== undefined || null) {
-            teamListA = this.props.teams.teams[0].map((player, index) => {
-            return (<div className="card" key={ index }><p>{ player.name }</p></div>)
+        if(teamListA.teams && teamListB.teams !== undefined || null) {
+            teamListA = teamListA.teams[0].map((player, idx) => {
+            return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
         })
-            teamListB = this.props.teams.teams[1].map((player, index) => {
-            return (<div className="card" key={ index }><p>{ player.name }</p></div>)
+            teamListB = teamListB.teams[1].map((player, idx) => {
+            return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
         })
     }
 
