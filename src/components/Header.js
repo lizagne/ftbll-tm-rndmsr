@@ -14,7 +14,7 @@ const Header = () => (
 	        </h1>
 	        <h2>Pick your teams</h2>
 
-            <p className="lead"> Enter 10 names to generate two random teams.</p>
+            <p className="lead"> Enter at least 4 names to generate two random teams.</p>
         </header>
     </div>
 );

@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import '../css/style.css';
 
 class TeamGenerator extends Component {
+    //whenever we want our component to be aware of state, we must set up the constructor with props
     constructor(props){
         super(props)
-    
-        this.state={
+        
+        //then set up the state for this component
+        this.state = {
             teams:'',
             show: false
         }
@@ -38,7 +40,7 @@ class TeamGenerator extends Component {
         return(
             <div className="col-sm-12 teams">
                 <div>
-                { this.props.players.length >= 10 ?
+                { this.props.players.length >= 4 ?
                     <span>
                         <button className="btn btn-danger reset btn-md" onClick={ this.onClickReset }>Reset</button>
                         <button className="teamGen btn btn-primary " onClick={ this.handleClick }>Generate Teams</button>

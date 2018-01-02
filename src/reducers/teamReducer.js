@@ -1,7 +1,6 @@
-
 import { GENERATE_TEAM, RESET } from '../data/Constants';
 
-//initialise the state as an array of two empty arrays
+//initialise the state as an array of two empty arrays, which represents the two teams, and the pass the action as the second argument
 const teamReducer = (state = [[],[]], action) => {
     
     switch(action.type) {
@@ -11,7 +10,7 @@ const teamReducer = (state = [[],[]], action) => {
             teams.push(action.payload.teamA);
             teams.push(action.payload.teamB);
 
-            // The Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object.    
+            // The Object.assign() method is used to copy the values of all properties from one or more source objects to a target object. It will return the target object.    
             return Object.assign({ }, state, {
                 teams: teams
             }); }

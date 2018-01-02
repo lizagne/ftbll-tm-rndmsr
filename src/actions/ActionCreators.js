@@ -1,4 +1,5 @@
 import * as constants from '../data/Constants';
+import _ from 'lodash';
 
 export const addPlayerActionCreator = player => ({
     type: constants.ADD_PLAYER,
@@ -19,9 +20,13 @@ export const reset = () => ({
     type: constants.RESET
 });
 
+const balanceTeamsActionCreator = () => ({
+    type: constants.BALANCE_TEAMS
+});
+
 //set up the random generator code: 
 // TODO: Try to use the shuffle method from lodash!
-export const generateTeamCreator = () => {
+export const generateTeamActionCreator = () => {
 
     return (dispatch, getState) => { 
 

@@ -5,14 +5,12 @@ const playersReducer = (state = [], action) => {
     switch(action.type) {
      
         case constants.ADD_PLAYER:
-            console.log('add');
             action.payload.id = Date.now();
            
             let newState = [...state, action.payload];
             return newState;  
 
         case constants.EDIT_PLAYER:
-            console.log('edit');
             return state.map( player => {
                 if(player.id !== action.payload.id) {
                     return player;
@@ -21,7 +19,6 @@ const playersReducer = (state = [], action) => {
             }) 
 
         case constants.DELETE_PLAYER:
-            console.log('delete');
             newState = state.filter( (player) => 
                 player.id !== action.payload.id
             );

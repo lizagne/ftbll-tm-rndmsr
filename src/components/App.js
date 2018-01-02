@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { 
     addPlayerActionCreator, 
     editPlayerActionCreator, 
-    generateTeamCreator, 
+    generateTeamActionCreator, 
     deletePlayerCreator, 
     reset } from '../actions/ActionCreators';
 
@@ -76,7 +76,7 @@ const mapDispatchToProps = dispatch => {
             dispatch(deletePlayerCreator(player));
         },
         generateTeam: () => {
-          dispatch(generateTeamCreator());
+          dispatch(generateTeamActionCreator());
         },
         resetAll: () => {
           dispatch(reset());
