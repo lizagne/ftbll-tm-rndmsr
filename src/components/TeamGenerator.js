@@ -37,8 +37,6 @@ class TeamGenerator extends Component {
             teamListB = teamListB.teams[1].map((player, idx) => {
             return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
         })
-
-
     }
 
         return(
