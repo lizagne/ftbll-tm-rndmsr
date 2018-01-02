@@ -1,6 +1,8 @@
 # Football 5-a-side Random Team Picker Project
 This is the technical project set on our penultimate day at the Coding Fellowship to make for January 7th
 
+## tecnologies used
+react, redux, jsx, css, sass, gulp, css animations, git
 
 ## The brief
 
