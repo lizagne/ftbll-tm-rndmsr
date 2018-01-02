@@ -24,6 +24,8 @@ export const reset = () => ({
 export const generateTeamCreator = () => {
 
     return (dispatch, getState) => { 
+
+    //using slice as it creates a new array    
     const players = getState().players.slice();
         
         let teamSize = players.length / 2;
@@ -31,7 +33,7 @@ export const generateTeamCreator = () => {
         let teamB = [];
 
         // randomise teams
-        for (let i = players.length - 1; i > 0; i--) {
+        for (let i = players.length - 1; i > 0; i-=1) {
             let j = Math.floor(Math.random() * (i + 1));
             let temp = players[i];
             players[i] = players[j];
