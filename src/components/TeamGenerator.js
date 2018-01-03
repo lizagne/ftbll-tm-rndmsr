@@ -25,38 +25,36 @@ class TeamGenerator extends Component {
        this.setState({ display: false });
     }
 
-
     render(){
         let teamListA = this.props.teams;
         let teamListB = this.props.teams;
         
-        //these two if statements says go through the array of each team and render the names
-        if(teamListA.teams && teamListB.teams !== undefined || null) {
-            teamListA = teamListA.teams[0].map((player, idx) => {
-            return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
-        })
-            teamListB = teamListB.teams[1].map((player, idx) => {
-            return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
-        })
+            //these two if statements says go through the array of each team and render the names
+            if(teamListA.teams && teamListB.teams !== undefined || null) {
+                teamListA = teamListA.teams[0].map((player, idx) => {
+                return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
+            })
+                teamListB = teamListB.teams[0].map((player, idx) => {
+                return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
+            })
     }
 
         return(
             <div>
-            { this.props.players.length >= 4 && this.props.players.length%2 === 0 ?
+            { this.props.players.length >= 4 ?
                 <span className="col-sm-12 teams">
                     <button className="btn btn-danger reset btn-md" onClick={ this.onClickClear }>Reset</button>
                     <button className="teamGen btn btn-primary " onClick={ this.onClick }>Generate Teams</button>
-                 </span> : null }
-
-                <span className="col-sm-6" > 
-                { this.state.display === true ? 
-                    <div className="teams">
+                    <span className="col-sm-6" > 
+                    { this.state.display === true ? 
+                    <div>
                         <h2 className="teamName">Team A</h2>
                         { teamListA }
                         <h2 className="teamName">Team B</h2>
                         { teamListB }
                     </div> : null }  
-                </span>
+                    </span>
+                </span> : null }
             </div>
         );
     }
