@@ -22,15 +22,15 @@ class Form extends Component {
                     <form onSubmit={ this.handleSubmit }>
 
                         <input 
+                            className="input"
                             type="text" 
-                            className="input" 
                             placeholder="Enter player's name..." 
                             value={ this.state.name } 
                             onChange={ event => this.setState({ name: event.target.value }) }/>
 
                         <button 
+                            className="btn btn-primary button btn-md"
                             type="submit" 
-                            className="btn btn-primary button btn-md" 
                             disabled={ !this.state.name }>Add player
                         </button>
                     </form>
