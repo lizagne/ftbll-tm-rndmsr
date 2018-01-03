@@ -67,12 +67,14 @@ I got a bit stuck with adding in Redux, and after lots of back and forth and loo
 ### Monday 1st Jan Notes:
 Since Boxing Day, I went over a lot of other React and separate stuff, I started again a couple of times after going back over Redux and React tutorials and workshops. I decided to go back to simplyfying the idea. I've now got to a stage where the user can enter names, the names get outputted to the left of the screen, these names come with an Edit and a Delete button. Then when 10 names have been entered the Reset and Generate buttons appear. Reset takes everything but the header and the input away from the screen, and Generate button generates two teams, these will then be shuffled when the user represses the generate button.
 
+### Wednesday 3rd Jan Notes:
+I've been trying to do a lot of Refactoring, but not always with much success, have sometimes reverted to older code, but I will endeavour. Just tried testing in different browsers, Firefox and Safari, both not working because of a Redux problem, found out it was about installing the dev tools, did that and both work now. Tried putting in some validation also, will continue with that. Will finish off the day with some SASS!
+
 Things TODO:
 1. Try and get a balancing skills section in, with stars, or points
 2. Add some more styling to the scoreboard area
 3. Refactor a lot of the code
-4. Move the MapDispatchToProps and ..State to their own pages
-5. Try to put the functionality for the randomising into a smaller function from lodash - called shuffle
+5. Try to put the functionality for the randomising into a smaller function from lodash - called _.shuffle
 
 ### Checklist
 1. Check accessibility and responsiveness when the project is nearing the end.
