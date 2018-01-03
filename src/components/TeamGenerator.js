@@ -13,21 +13,22 @@ class TeamGenerator extends Component {
         }
     }
 
-    //this is the event handler for resetting
-    onClickReset = () => {
-       this.props.resetAll();
-       this.setState({ display: false });
-    }
-
     //event handler for the team generation button
     onClick = () => {
         this.props.generateTeam();
         this.setState({display: true});    
     }
 
+    //this is the event handler for resetting
+    onClickClear = () => {
+       this.props.resetAll();
+       this.setState({ display: false });
+    }
+
+
     render(){
-        let teamListA = this.props.teams
-        let teamListB = this.props.teams
+        let teamListA = this.props.teams;
+        let teamListB = this.props.teams;
         
         //these two if statements says go through the array of each team and render the names
         if(teamListA.teams && teamListB.teams !== undefined || null) {
@@ -40,27 +41,22 @@ class TeamGenerator extends Component {
     }
 
         return(
+            <div>
+            { this.props.players.length >= 4 && this.props.players.length%2 === 0 ?
+                <span className="col-sm-12 teams">
+                    <button className="btn btn-danger reset btn-md" onClick={ this.onClickClear }>Reset</button>
+                    <button className="teamGen btn btn-primary " onClick={ this.onClick }>Generate Teams</button>
+                 </span> : null }
 
-            <div className="col-sm-12 teams">
-                <div>
-                { this.props.players.length >= 4 && this.props.players.length%2 === 0 ?
-                    <span>
-                        <button className="btn btn-danger reset btn-md" onClick={ this.onClickReset }>Reset</button>
-                        <button className="teamGen btn btn-primary " onClick={ this.onClick }>Generate Teams</button>
-                    </span> : null }
-                </div>    
-
-                <div className="row team-output">
-                    <span className="col-sm-6" > 
-                        { this.state.display === true ? <h2 className="teamName">Team A</h2> : null } 
+                <span className="col-sm-6" > 
+                { this.state.display === true ? 
+                    <div className="teams">
+                        <h2 className="teamName">Team A</h2>
                         { teamListA }
-                    </span>
-
-                    <span className="col-sm-6">
-                        { this.state.display === true ? <h2 className="teamName">Team B</h2> : null }
+                        <h2 className="teamName">Team B</h2>
                         { teamListB }
-                    </span>
-                </div>
+                    </div> : null }  
+                </span>
             </div>
         );
     }
