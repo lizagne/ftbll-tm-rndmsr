@@ -17,5 +17,4 @@ const TeamList = props =>  (
 
 export default TeamList;
 
-
 //Here the player component gets passed into the TeamList component, the Player takes lots of props. The data of the player, the key to uniquely identify it so that React knows which object it needs to update, and only updates that one. Then the three buttons that the user can interact within it.

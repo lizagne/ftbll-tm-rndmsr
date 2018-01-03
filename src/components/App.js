@@ -30,7 +30,7 @@ class App extends Component {
                     <Header />
                     <div className="main-content">
                         <div>
-                            <Form addPlayer={this.props.addPlayer} />
+                            <Form addPlayer={ this.props.addPlayer } />
                             <TeamList
                                 players={ this.props.players } 
                                 addPlayer={ this.props.addPlayer } 
