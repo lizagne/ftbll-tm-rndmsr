@@ -4,6 +4,8 @@ This is the technical project set on our penultimate day at the Coding Fellowshi
 ## tecnologies used
 react, redux, jsx, css, sass, gulp, css animations, git
 
+
+
 ## The brief
 
 The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names.
@@ -23,6 +25,12 @@ If your tool requires a particular environment to run (e.g. Node or PHP)
 then this should be documented, or provided (e.g. Vagrantfile). 
 
 In short: I shouldn't struggle to get it working on my local machine.
+
+
+## Wireframes:
+
+![Demo](https://user-images.githubusercontent.com/26763021/34521518-f97e4088-f085-11e7-937b-10b21d12942a.png)
+![Demo](https://user-images.githubusercontent.com/26763021/34521517-f962918a-f085-11e7-9778-cb628c70ce69.png)
 
 
 # My initial notes
