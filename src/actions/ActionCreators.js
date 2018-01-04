@@ -1,5 +1,6 @@
 import * as constants from '../data/Constants';
-import _ from 'lodash';
+// import _ from 'lodash';
+// import { Map, List } from 'immutable';
 
 export const addPlayerActionCreator = player => ({
     type: constants.ADD_PLAYER,
@@ -11,7 +12,7 @@ export const editPlayerActionCreator = player => ({
     payload: player
 });
 
-export const deletePlayerCreator = player => ({
+export const deletePlayerActionCreator = player => ({
     type: constants.DELETE_PLAYER,
     payload: player
 });
@@ -20,8 +21,14 @@ export const reset = () => ({
     type: constants.RESET
 });
 
-const balanceTeamsActionCreator = () => ({
-    type: constants.BALANCE_TEAMS
+// export const balanceTeamsActionCreator = () => ({
+//     type: constants.BALANCE_TEAMS
+// });
+
+export const updateName = id => ({
+    type: constants.UPDATE_NAME,
+    payload: id
+
 });
 
 //set up the random generator code: 

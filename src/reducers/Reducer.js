@@ -1,4 +1,17 @@
 import * as constants from '../data/Constants';
+// import { updateName } from '../actions/ActionCreators';
+
+// const updateName = (state, {name, id}) => {
+
+//     return state.update('name', name => name.map(n => {
+//         if(n.get('id') === id) {
+//             return n.set('name', name);
+//         }
+//         return n;
+//     }))
+
+// }
+
 
 const playersReducer = (state = [], action) => {
     
@@ -17,6 +30,9 @@ const playersReducer = (state = [], action) => {
                 } 
                 return action.payload;      
             }) 
+
+        // case constants.UPDATE_NAME:
+        //     return updateName(state, action);
 
         case constants.DELETE_PLAYER:
             newState = state.filter( (player) => 

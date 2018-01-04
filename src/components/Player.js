@@ -12,8 +12,7 @@ class Player extends Component {
     toggleEditMode = () => {
         this.setState({ isEditing: !this.state.isEditing });
     }
-
-    
+     
     onNameEdit = (event, player) => {
         player.name = event.target.value;
         this.props.editPlayer(player);
@@ -23,8 +22,6 @@ class Player extends Component {
     removePlayer = player => {
         this.props.deletePlayer(player);
     }
-
-
 
     render() {
         return (

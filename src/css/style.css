@@ -33,9 +33,26 @@ input {
   color: #fff; }
 
 .teams {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
   padding: 35px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.teamOutput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 40px; }
+
+.teamName {
+  color: #333;
+  margin-bottom: 25px; }
+
+.teamGen {
+  margin-right: 10px; }
 
 .btn-warning {
   margin-right: 5px; }
@@ -59,13 +76,16 @@ form {
   flex-direction: row;
   width: 50%; }
 
+form.teamNames {
+  width: 100%; }
+
 .input {
   width: 100%;
   height: 50px;
   border-radius: 4px; }
 
 .btn-primary {
-  margin-left: 20px; }
+  margin-left: 10px; }
 
 .list-group {
   width: 100%;
@@ -88,7 +108,7 @@ form {
 
 .App {
   text-align: center;
-  padding: 20px 100px;
+  padding: 20px 50px;
   color: #333; }
 
 .App-logo, .App-logo1 {
@@ -108,3 +128,7 @@ form {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+@media screen and (max-width: 991px) {
+  form {
+    width: 100%; } }

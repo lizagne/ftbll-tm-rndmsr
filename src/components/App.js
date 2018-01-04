@@ -12,7 +12,7 @@ import {
     addPlayerActionCreator, 
     editPlayerActionCreator, 
     generateTeamActionCreator, 
-    deletePlayerCreator, 
+    deletePlayerActionCreator, 
     reset } from '../actions/ActionCreators';
 
 class App extends Component {
@@ -68,14 +68,14 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addPlayer: (player) => {
+        addPlayer: player => {
             dispatch(addPlayerActionCreator(player));
         },
-        editPlayer: (player) => {
+        editPlayer: player => {
             dispatch(editPlayerActionCreator(player));
         },
-        deletePlayer: (player) => {
-            dispatch(deletePlayerCreator(player));
+        deletePlayer: player => {
+            dispatch(deletePlayerActionCreator(player));
         },
         generateTeam: () => {
           dispatch(generateTeamActionCreator());
