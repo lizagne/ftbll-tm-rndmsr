@@ -1,3 +1,8 @@
+body form, .App .container, .App .input-group, .App .teamOutput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
 body {
   background-color: #264408;
   background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%);
@@ -6,122 +11,86 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 2px;
   line-height: 25px; }
-
-h1 {
-  font-family: "Alfa Slab One", cursive;
-  letter-spacing: 2px;
-  margin: 0;
-  color: #fff; }
-
-h2, h3, h4, h5 {
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 0;
-  color: #fff; }
-
-header {
-  margin-top: 20px; }
-
-input {
-  border-width: 0px;
-  padding: 5px;
-  font-size: 20px; }
-
-.lead {
-  width: 80%;
-  margin: 20px auto;
-  line-height: 25px;
-  color: #fff; }
-
-.teams {
-  background-color: #fff;
-  padding: 35px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column; }
-
-.teamOutput {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 40px; }
-
-.teamName {
-  color: #333;
-  margin-bottom: 25px; }
-
-.teamGen {
-  margin-right: 10px; }
-
-.btn-warning {
-  margin-right: 5px; }
-
-.container {
-  display: flex;
-  justify-content: space-around;
-  margin: 25px auto;
-  padding: 20px; }
-
-.input-group {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 100%; }
-
-form {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 50%; }
-
-form.teamNames {
-  width: 100%; }
-
-.input {
-  width: 100%;
-  height: 50px;
-  border-radius: 4px; }
-
-.btn-primary {
-  margin-left: 10px; }
-
-.list-group {
-  width: 100%;
-  margin-bottom: 5px; }
-
-.list-group-item {
-  text-transform: capitalize;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px; }
-
-.card {
-  text-transform: uppercase;
-  font-family: "Alfa Slab One", cursive;
-  font-size: 20px;
-  line-height: 35px; }
-
-.team-output {
-  margin-top: 30px; }
+  body h1 {
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #fff; }
+  body h2, body h3, body h4, body h5 {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    color: #fff; }
+  body form {
+    width: 50%; }
+  body header {
+    margin-top: 20px; }
+  body input {
+    border-width: 0px;
+    padding: 5px;
+    font-size: 20px; }
 
 .App {
   text-align: center;
   padding: 20px 50px;
-  color: #333; }
-
-.App-logo, .App-logo1 {
-  animation: App-logo-spin infinite 10s linear;
-  height: 50px;
-  margin-right: 10px; }
-
-.App-logo1 {
-  margin-left: 10px; }
-
-.football-form {
-  text-align: center;
-  margin: 0 auto; }
+  color: #333;
+  width: 100%; }
+  .App .App-logo, .App .App-logo1 {
+    animation: App-logo-spin infinite 10s linear;
+    height: 50px;
+    margin-right: 10px; }
+  .App .App-logo1 {
+    margin-left: 10px; }
+  .App .lead {
+    width: 80%;
+    margin: 20px auto;
+    line-height: 25px;
+    color: #fff; }
+  .App .container {
+    margin: 25px auto;
+    padding: 20px; }
+  .App .input-group {
+    margin: 0 auto;
+    width: 100%; }
+  .App .input {
+    width: 100%;
+    height: 50px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+  .App .list-group-item {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px; }
+  .App .teams {
+    background-color: #fff;
+    padding: 35px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  .App .teamOutput {
+    width: 100%;
+    margin-top: 40px; }
+  .App .teamGen {
+    margin-right: 10px; }
+  .App .teamName {
+    color: #333;
+    margin-bottom: 25px; }
+  .App .card {
+    text-transform: uppercase;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 20px;
+    line-height: 35px; }
+  .App .btn-warning {
+    margin-right: 5px; }
+  .App .btn-primary {
+    margin-left: 10px; }
 
 @keyframes App-logo-spin {
   from {
@@ -132,3 +101,7 @@ form.teamNames {
 @media screen and (max-width: 991px) {
   form {
     width: 100%; } }
+
+@media screen and (max-width: 568px) {
+  .App-logo1 {
+    display: none; } }
