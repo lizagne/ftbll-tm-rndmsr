@@ -1,19 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
-import App from './App';
+
+import App from './components/App';
 
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 
-import reducer from './data/reducer';
+//import Reducers to then combine together:
+import playersReducer from './reducers/Reducer';
+import teamReducer from './reducers/teamReducer';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 
-const store = createStore(reducer);
+//I need to use custom middleware - Thunk to run async actions.
+import thunk from 'redux-thunk';
+
+//set up React devtools to help with development
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+
+//compose is used to apply several store enhancers in a row,
+const enhancer = compose(
+    applyMiddleware(thunk),
+    devTools
+);
+
+//The state produced by combineReducers() namespaces the states of each reducer under their keys as passed to combineReducers()
+const store = createStore(combineReducers({ players: playersReducer, teams: teamReducer }), enhancer);
 
 
 ReactDOM.render(
-	<Provider store={ store }>
-		<App />
-	</Provider>,
-	 document.getElementById('root')
+	//Provider makes the store available to all container components in the app without passing it explicitly
+    <Provider store={ store } >
+    	<App />
+    </Provider>, 
+    	document.getElementById('root')
 );
+
