@@ -8,6 +8,7 @@ body {
   background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%);
   background-size: 100px 100px;
   margin: 0 auto;
+  font-size: 18px;
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 2px;
   line-height: 25px; }
@@ -16,10 +17,12 @@ body {
     letter-spacing: 2px;
     margin: 0;
     color: #fff; }
-  body h2, body h3, body h4, body h5 {
+  body h2, body h4, body h5 {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     color: #337ab7; }
+  body h3 {
+    color: #f0ad4e; }
   body p.main {
     color: #fff; }
   body form {

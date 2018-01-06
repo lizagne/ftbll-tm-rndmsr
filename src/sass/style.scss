@@ -3,10 +3,12 @@ $darkGreen: #264408;
 $grey: #333;
 $white: #fff;
 $blue: #337ab7;
+$orange: #f0ad4e;
 
 //fonts:
 $condensed-font: 'Roboto Condensed', sans-serif;
 $wide-font: 'Alfa Slab One', cursive;
+$body-font-size: 18px;
 $font-space: 2px;
 $leading-body: 25px;
 $leading-header: 35px;
@@ -32,6 +34,7 @@ body {
 	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.02) 50%);
 	background-size: 100px 100px;
 	margin: 0 auto;
+	font-size: $body-font-size;
 	font-family: $condensed-font;
 	letter-spacing: $font-space;
 	line-height: $leading-body;
@@ -43,10 +46,14 @@ body {
 		color: $white;
 	}
 
-	h2, h3, h4, h5 {
+	h2, h4, h5 {
 		font-family: $condensed-font;
 		margin: 0;
 		color: $blue;
+	}
+
+	h3 {
+		color: $orange;
 	}
 
 	p.main {
