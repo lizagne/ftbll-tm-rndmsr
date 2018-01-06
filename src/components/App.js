@@ -3,7 +3,9 @@ import Form from './forms/Form';
 import TeamList from './lists/TeamList';
 import TeamGenerator from './lists/TeamGenerator';
 import Header from './globals/Header';
-import { CSSTransitionGroup } from 'react-transition-group';
+import MainContent from './globals/MainContent';
+
+// import { CSSTransitionGroup } from 'react-transition-group';
 
 import { connect } from 'react-redux';
 
@@ -24,33 +26,38 @@ class App extends Component {
         return (
             <div className="App">
 
-                <div className="col-sm-12">
-
+                <div className="col-sm-6 col-sm-offset-3">
                     <Header />
-                    <div className="main-content">
-                        <div>
-                            <Form addPlayer={ this.props.addPlayer } />
-                            <TeamList
-                                players={ this.props.players } 
-                                addPlayer={ this.props.addPlayer } 
-                                editPlayer={ this.props.editPlayer } 
-                                deletePlayer={this.props.deletePlayer } 
-                            />
-                        </div>
+                </div> 
+                
+                <div>    
+                    <Form addPlayer={ this.props.addPlayer } />
+                </div>   
 
-                        <div className="col-sm-8">
+                <div className="col-sm-12">
+                    <MainContent />
+                </div>    
 
-                            <TeamGenerator
-                                generateTeam={ this.props.generateTeam } 
-                                teams={ this.props.teams } 
-                                players={ this.props.players } 
-                                resetAll={ this.props.resetAll }
-                            />
-                            
-                        </div>
-                    </div>    
+                <div>
+                    <TeamList
+                        players={ this.props.players } 
+                        addPlayer={ this.props.addPlayer } 
+                        editPlayer={ this.props.editPlayer } 
+                        deletePlayer={this.props.deletePlayer } 
+                    />
                 </div>
-            </div> 
+
+                <div className="col-sm-8">
+
+                    <TeamGenerator
+                        generateTeam={ this.props.generateTeam } 
+                        teams={ this.props.teams } 
+                        players={ this.props.players } 
+                        resetAll={ this.props.resetAll }
+                    />
+                </div>
+                            
+            </div>
         );
     }
 }

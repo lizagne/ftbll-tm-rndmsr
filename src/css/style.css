@@ -1,4 +1,4 @@
-body form, .App .container, .App .input-group, .App .teamOutput {
+body form, .App .container, .App .input-group, .App .main-content, .App .teamOutput {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -19,7 +19,9 @@ body {
   body h2, body h3, body h4, body h5 {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
-    color: #2757f6; }
+    color: #337ab7; }
+  body p.main {
+    color: #fff; }
   body form {
     width: 50%; }
   body header {
@@ -102,6 +104,6 @@ body {
   form {
     width: 100%; } }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 1136px) {
   .App-logo1 {
     display: none; } }

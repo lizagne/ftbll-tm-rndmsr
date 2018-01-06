@@ -7,7 +7,7 @@ import App from './components/App';
 import { Provider } from 'react-redux';
 
 //import Reducers to then combine together:
-import playersReducer from './reducers/Reducer';
+import playersReducer from './reducers/playersReducer';
 import teamReducer from './reducers/teamReducer';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 

@@ -12,7 +12,6 @@ import * as constants from '../data/Constants';
 
 // }
 
-
 const playersReducer = (state = [], action) => {
     
     switch(action.type) {

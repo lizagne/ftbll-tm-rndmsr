@@ -2,7 +2,7 @@
 $darkGreen: #264408;
 $grey: #333;
 $white: #fff;
-$blue: #2757f6;
+$blue: #337ab7;
 
 //fonts:
 $condensed-font: 'Roboto Condensed', sans-serif;
@@ -47,6 +47,10 @@ body {
 		font-family: $condensed-font;
 		margin: 0;
 		color: $blue;
+	}
+
+	p.main {
+		color: $white;
 	}
 
 	form {
@@ -104,6 +108,10 @@ body {
 		width: 100%;
 		height: 50px;
 		@include border-radius(4px);
+	}
+
+	.main-content {
+		@extend %flex-shared;
 	}
 
 	.list-group-item {
@@ -177,7 +185,7 @@ body {
 	// }
 }
 
-@media screen and (max-width : 568px) {
+@media screen and (max-width : 1136px) {
 	.App-logo1 {
 		display: none;
 	}
