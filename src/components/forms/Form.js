@@ -28,8 +28,8 @@ class Form extends Component {
 
     switch(fieldName) {
       case 'name':
-        nameValid = value.match(/^[a-zA-Z][a-zA-Z0-9 \-']+$/);
-        fieldValidationErrors.name = nameValid ? '' : ' can only include, letters, numbers, hyphens and apostrophes';
+        nameValid = value.match(/^[a-zA-Z0-9 \-']{3,30}$/);
+        fieldValidationErrors.name = nameValid ? '' : ' cannot include letters, numbers, hyphens and apostrophes and must be between 3 and 30 characters long';
         break;
 
       default:
@@ -54,13 +54,11 @@ class Form extends Component {
     render() {
 
         return (
-            <div className="container">
+            <div>
 
                 <div className="input-group">
 
                     <form onSubmit={ this.onSubmit }>
-
-                        <FormErrors formErrors={ this.state.formErrors } />
 
                             <label htmlFor="name">Team Player Name</label>
 
@@ -70,8 +68,8 @@ class Form extends Component {
                                 name="name"
                                 placeholder="Enter player's name..." 
                                 value={ this.state.name }
-                                maxLength={ 20 }
-                                minLength={ 3 } 
+                                minLength={ 3 }
+                                maxLength={ 30 }
                                 onChange={ this.handleUserInput }/>
 
                         <button className="btn btn-primary button btn-md"
@@ -79,9 +77,13 @@ class Form extends Component {
                             disabled={ !this.state.formValid }>Add player
                         </button>
 
-                    </form>
+                    </form>   
 
                 </div>
+
+                <div className="error-wrapper">
+                    <FormErrors formErrors={ this.state.formErrors } />
+                </div> 
 
             </div>
         )
