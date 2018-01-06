@@ -45,8 +45,8 @@ class TeamGenerator extends Component {
                 <section className="col-sm-12 teams">
 
                     <span>
-                        <button className="btn btn-primary teamGen" onClick={ this.onClick }>Generate Teams</button>
-                        <button className="btn btn-danger reset" onClick={ this.onClickClear }>Clear Names</button>
+                        <button className="btn btn-primary teamGen" onClick={ this.onClick }><i className="fa fa-star" aria-hidden="true"></i> Generate Teams</button>
+                        <button className="btn btn-danger reset" onClick={ this.onClickClear }><i className="fa fa-minus-circle" aria-hidden="true"></i> Clear Names</button>
                     </span>
                     <span className="col-sm-12" > 
                     { this.state.display === true ? 

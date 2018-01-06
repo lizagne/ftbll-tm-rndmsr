@@ -39,12 +39,12 @@ class Player extends Component {
                             <button 
                                 className="btn btn-warning btn-xs" 
                                 type="edit" 
-                                onClick={ () => { this.toggleEditMode() } }>Edit
+                                onClick={ () => { this.toggleEditMode() } }><i className="fa fa-pencil" aria-hidden="true"></i> Edit
                             </button>
 
                             <button 
                                 className="btn btn-danger btn-xs" 
-                                onClick= { () => { this.removePlayer(this.props.data) } }>Delete
+                                onClick= { () => { this.removePlayer(this.props.data) } }><i className="fa fa-trash" aria-hidden="true"></i> Delete
                             </button> 
                         </div>
                     </li>
