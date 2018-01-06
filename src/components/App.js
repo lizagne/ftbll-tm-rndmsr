@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Form from './Form';
-import TeamList from './TeamList';
-import TeamGenerator from './TeamGenerator';
-import Header from './Header';
-
-import '../css/style.css';
+import Form from './forms/Form';
+import TeamList from './lists/TeamList';
+import TeamGenerator from './lists/TeamGenerator';
+import Header from './globals/Header';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 import { connect } from 'react-redux';
 
@@ -57,7 +56,7 @@ class App extends Component {
 }
 
 
-/////////   dispatching        //////////
+//MapStateToProps and mapDispatchToProps for the entire app goes here rather than in separate files.
 
 const mapStateToProps = state => {
     return {

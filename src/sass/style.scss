@@ -2,6 +2,7 @@
 $darkGreen: #264408;
 $grey: #333;
 $white: #fff;
+$blue: #2757f6;
 
 //fonts:
 $condensed-font: 'Roboto Condensed', sans-serif;
@@ -45,7 +46,7 @@ body {
 	h2, h3, h4, h5 {
 		font-family: $condensed-font;
 		margin: 0;
-		color: $white;
+		color: $blue;
 	}
 
 	form {
@@ -175,33 +176,9 @@ body {
 	// 	width: 80%;
 	// }
 }
-	
-// 	#optin p {
-// 		margin: 0 0 10px;
-// 	}
-	
-// 	#featurette iframe {
-// 		height: 240px;
-// 	}
-	
-// 	.resource {
-// 		width: 48%;
-// 		margin-right: 2%;
-// 	}
-// }
 
 @media screen and (max-width : 568px) {
 	.App-logo1 {
 		display: none;
 	}
 }	
-	
-// 	#about .num span {
-// 		font-size: 16px;
-// 	}
-	
-// 	.resource {
-// 		width: 100%;
-// 		margin-right: 0;
-// 	}
-// })

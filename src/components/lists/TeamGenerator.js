@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/style.css';
+import '../../css/style.css';
 
 class TeamGenerator extends Component {
     //whenever we want our component to be aware of state, we must set up the constructor with props
