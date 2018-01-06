@@ -80,6 +80,14 @@ body {
 		display: none;
 	}
 
+	footer {
+		position: fixed;
+ 		height: 60px;
+ 		bottom: 0;
+ 		left: 0;
+ 		width: 100%;
+ 		background-color: $blue;
+	}
 }
 
 .App {

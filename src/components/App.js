@@ -4,6 +4,7 @@ import TeamList from './lists/TeamList';
 import TeamGenerator from './lists/TeamGenerator';
 import Header from './globals/Header';
 import MainContent from './globals/MainContent';
+import Footer from './globals/Footer';
 
 // import { CSSTransitionGroup } from 'react-transition-group';
 
@@ -56,7 +57,11 @@ class App extends Component {
                             resetAll={ this.props.resetAll }
                         />
                     </div>
-                </div>    
+                </div>
+
+                <div className="col-sm-12">
+                    <Footer />
+                </div>     
                             
             </div>
         );
