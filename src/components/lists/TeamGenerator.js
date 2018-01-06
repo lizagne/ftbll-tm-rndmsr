@@ -51,21 +51,21 @@ class TeamGenerator extends Component {
                     <span className="col-sm-12" > 
                     { this.state.display === true ? 
 
-                    // <h2>Your Teams</h2>
-                    <div className="teamOutput">
+                        // <h2>Your Teams</h2>
+                        <div className="teamOutput">
 
-                        <div>
-                            <h2 className="teamName">Team A</h2>
-                            <div>{ teamListA }</div>
-                        </div>
+                            <div>
+                                <h2 className="teamName">Team A</h2>
+                                <div>{ teamListA }</div>
+                            </div>
 
 
-                        <div>
-                            <h2 className="teamName">Team B</h2>
-                            <div>{ teamListB }</div>
-                        </div>
+                            <div>
+                                <h2 className="teamName">Team B</h2>
+                                <div>{ teamListB }</div>
+                            </div>
 
-                    </div> : null }  
+                        </div> : null }  
 
                     </span>
                 </section> : null }

@@ -38,24 +38,25 @@ class App extends Component {
                     <MainContent />
                 </div>    
 
-                <div>
-                    <TeamList
-                        players={ this.props.players } 
-                        addPlayer={ this.props.addPlayer } 
-                        editPlayer={ this.props.editPlayer } 
-                        deletePlayer={this.props.deletePlayer } 
-                    />
-                </div>
+                <div className="col-md-12">
+                    <div className="col-md-6">
+                        <TeamList
+                            players={ this.props.players } 
+                            addPlayer={ this.props.addPlayer } 
+                            editPlayer={ this.props.editPlayer } 
+                            deletePlayer={this.props.deletePlayer } 
+                        />
+                    </div>
 
-                <div className="col-sm-8">
-
-                    <TeamGenerator
-                        generateTeam={ this.props.generateTeam } 
-                        teams={ this.props.teams } 
-                        players={ this.props.players } 
-                        resetAll={ this.props.resetAll }
-                    />
-                </div>
+                    <div className="col-md-6">
+                        <TeamGenerator
+                            generateTeam={ this.props.generateTeam } 
+                            teams={ this.props.teams } 
+                            players={ this.props.players } 
+                            resetAll={ this.props.resetAll }
+                        />
+                    </div>
+                </div>    
                             
             </div>
         );

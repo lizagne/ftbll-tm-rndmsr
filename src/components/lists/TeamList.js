@@ -2,7 +2,7 @@ import React from 'react';
 import Player from './Player';
 
 const TeamList = props =>  (
-    <div className="col-sm-4">
+    <div>
 	    { props.players.map(player =>
 		<Player 
 			data={ player } 

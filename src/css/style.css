@@ -102,7 +102,9 @@ body {
 
 @media screen and (max-width: 991px) {
   form {
-    width: 100%; } }
+    width: 100%; }
+  div.right {
+    display: none; } }
 
 @media screen and (max-width: 1136px) {
   .App-logo1 {
