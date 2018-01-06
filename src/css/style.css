@@ -1,4 +1,4 @@
-body form, .App .container, .App .input-group, .App .main-content, .App .teamOutput {
+body form, body footer, .App .container, .App .input-group, .App .main-content, .App .teamOutput {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -42,6 +42,12 @@ body {
     left: 0;
     width: 100%;
     background-color: #337ab7; }
+    body footer a:link, body footer a:visited {
+      color: rgba(255, 255, 255, 0.3);
+      text-decoration: none;
+      margin-top: 18px; }
+    body footer a:hover {
+      color: #2e6da4; }
 
 .App {
   text-align: center;

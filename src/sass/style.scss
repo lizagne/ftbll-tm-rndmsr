@@ -3,8 +3,10 @@ $darkGreen: #264408;
 $grey: #333;
 $white: #fff;
 $blue: #337ab7;
+$darkBlue: #2e6da4;
 $orange: #f0ad4e;
 $red: #d9534f;
+$transWhite: rgba(255, 255, 255, .3);
 
 //fonts:
 $condensed-font: 'Roboto Condensed', sans-serif;
@@ -28,6 +30,12 @@ $leading-header: 35px;
 	flex-direction: row;
 	justify-content: space-around;
 }
+
+// %flex-center{
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-evenly;
+// }
 
 //globals
 body {
@@ -87,6 +95,17 @@ body {
  		left: 0;
  		width: 100%;
  		background-color: $blue;
+ 		@extend %flex-shared;
+
+ 		a:link, a:visited {
+ 			color: $transWhite;
+ 			text-decoration: none;
+ 			margin-top: 18px;
+ 		}
+
+ 		a:hover {
+ 			color: $darkBlue;
+ 		}
 	}
 }
 
