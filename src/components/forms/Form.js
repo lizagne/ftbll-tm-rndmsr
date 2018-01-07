@@ -19,12 +19,12 @@ class Form extends Component {
     handleUserInput = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-        this.setState({[name]: value}, () => { this.validateField(name, value) });
+        this.setState({ [name]: value }, () => { this.validateField(name, value) });
     }
 
     validateField(fieldName, value) {
-    let fieldValidationErrors = this.state.formErrors;
-    let nameValid = this.state.nameValid;
+        let fieldValidationErrors = this.state.formErrors;
+        let nameValid = this.state.nameValid;
 
     switch(fieldName) {
       case 'name':
@@ -42,7 +42,7 @@ class Form extends Component {
     }
 
     validateForm() {
-        this.setState({formValid: this.state.nameValid});
+        this.setState({ formValid: this.state.nameValid });
     }
 
     onSubmit = event => {
@@ -54,6 +54,7 @@ class Form extends Component {
     render() {
 
         return (
+
             <div className="form-wrapper">
 
                 <div className="input-group">
@@ -70,7 +71,8 @@ class Form extends Component {
                                 value={ this.state.name }
                                 minLength={ 3 }
                                 maxLength={ 30 }
-                                onChange={ this.handleUserInput }/>
+                                onChange={ this.handleUserInput }
+                            />
 
                         <button className="btn btn-primary button btn-md"
                             type="submit" 

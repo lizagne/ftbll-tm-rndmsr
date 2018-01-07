@@ -6,8 +6,6 @@ import Header from './globals/Header';
 import MainContent from './globals/MainContent';
 import Footer from './globals/Footer';
 
-// import { CSSTransitionGroup } from 'react-transition-group';
-
 import { connect } from 'react-redux';
 
 import { 
@@ -30,7 +28,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-
                 <div className="col-sm-6 col-sm-offset-3">
                     <Header />
                 </div> 
@@ -44,17 +41,17 @@ class App extends Component {
                 </div>    
 
                 <div className="col-md-12">
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-md-offset-1">
                         <TeamList
                             players={ this.props.players } 
                             addPlayer={ this.props.addPlayer } 
                             toggleEditingAt={ this.toggleEditingAt }
                             editPlayer={ this.props.editPlayer } 
-                            deletePlayer={this.props.deletePlayer } 
+                            deletePlayer={ this.props.deletePlayer } 
                         />
                     </div>
 
-                    <div className="col-md-8">
+                    <div className="col-md-6">
                         <TeamGenerator
                             generateTeam={ this.props.generateTeam } 
                             teams={ this.props.teams } 
@@ -63,7 +60,7 @@ class App extends Component {
                         />
                     </div>
                 </div>
-
+                <div className="clear"></div>
                 <div className="col-sm-12">
                     <Footer />
                 </div>     

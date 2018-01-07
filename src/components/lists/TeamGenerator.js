@@ -28,14 +28,15 @@ class TeamGenerator extends Component {
     render(){
         let teamListA = this.props.teams;
         let teamListB = this.props.teams;
-        
+
         //these two if statements says go through the array of each team and render the names
         if(teamListA.teams && teamListB.teams !== null) {
             teamListA = teamListA.teams[0].map((player, idx) => {
-            return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
+
+            return (<div className="card" key={ idx }><p>{ player.name.length >= 20 ? player.name.slice(0, 19) + "..." : player.name }</p></div>)
         })
             teamListB = teamListB.teams[1].map((player, idx) => {
-            return (<div className="card" key={ idx }><p>{ player.name }</p></div>)
+            return (<div className="card" key={ idx }><p>{ player.name.length >= 15 ? player.name.slice(0, 19) + "..." : player.name }</p></div>)
         })
     }
 
@@ -51,16 +52,14 @@ class TeamGenerator extends Component {
                     <span className="col-sm-12" > 
                     { this.state.display === true ? 
 
-                        // <h2>Your Teams</h2>
                         <div className="teamOutput">
 
-                            <div className="col-sm-6">
+                            <div className="col-md-6">
                                 <h2 className="teamName">Team One</h2>
                                 <div>{ teamListA }</div>
                             </div>
 
-
-                            <div className="col-sm-6">
+                            <div className="col-md-6">
                                 <h2 className="teamName">Team Two</h2>
                                 <div>{ teamListB }</div>
                             </div>
