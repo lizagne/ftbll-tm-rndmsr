@@ -4,9 +4,13 @@ body form, body footer, .App .container, .App .input-group, .App .main-content, 
   justify-content: space-around; }
 
 body {
-  background-color: #264408;
-  background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%);
-  background-size: 100px 100px;
+  background-color: #549f0e;
+  background-image: url("../svg/football-pitch.svg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0 auto;
   font-size: 18px;
   font-family: "Roboto Condensed", sans-serif;
@@ -18,11 +22,12 @@ body {
     margin: 0;
     color: #fff; }
   body h2, body h4, body h5 {
-    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
-    color: #337ab7; }
+    color: #d9534f; }
   body h3 {
-    color: #f0ad4e; }
+    color: #f0ad4e;
+    margin-bottom: 0;
+    font-weight: bolder; }
   body p.main {
     color: #fff; }
   body form {
@@ -41,13 +46,13 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #337ab7; }
+    background-color: #d9534f; }
     body footer a:link, body footer a:visited {
       color: rgba(255, 255, 255, 0.3);
       text-decoration: none;
       margin-top: 18px; }
     body footer a:hover {
-      color: #2e6da4; }
+      color: #fff; }
 
 .App {
   text-align: center;
@@ -83,6 +88,8 @@ body {
     font-size: 12px;
     line-height: 14px;
     margin-top: 5px; }
+  .App .main-content {
+    margin-top: 25px; }
   .App .list-group-item {
     text-transform: capitalize;
     display: flex;
@@ -105,11 +112,13 @@ body {
   .App .teamGen {
     margin-right: 10px; }
   .App .teamName {
-    color: #333;
-    margin-bottom: 25px; }
-  .App .card {
-    text-transform: uppercase;
     font-family: "Alfa Slab One", cursive;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.2em; }
+  .App .card {
+    text-transform: capitalize;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
     line-height: 35px; }
   .App .btn-warning {
@@ -124,6 +133,8 @@ body {
     transform: rotate(360deg); } }
 
 @media screen and (max-width: 991px) {
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%) 100px 100px;
+  background-size: 100px 100px;
   form {
     width: 100%; }
   div.right {

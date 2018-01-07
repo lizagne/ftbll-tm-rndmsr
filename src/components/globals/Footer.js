@@ -7,7 +7,7 @@ const Footer = () => (
 
             <a href="https://github.com/lizagne/ftbll-tm-rndmsr" className="footer" target="_blank" rel="noopener noreferrer"><i className="fa fa-external-link-square" aria-hidden="true"></i> View Code on GitHub</a>
 
-            <a href="https://developme.training/fellowship/" className="footer" target="_blank" rel="noopener noreferrer"><i className="fa fa-external-link-square" aria-hidden="true"></i> A final task set by DevelopMe_</a>
+            <a href="https://developme.training/fellowship/" className="footer" target="_blank" rel="noopener noreferrer"><i className="fa fa-external-link-square" aria-hidden="true"></i> Final Project at DevelopMe_</a>
         </footer>
     </div>
 );

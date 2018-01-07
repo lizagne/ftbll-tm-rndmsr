@@ -1,11 +1,13 @@
 //set up colors:
-$darkGreen: #264408;
+$darkGreen: #549f0e;
 $grey: #333;
 $white: #fff;
 $blue: #337ab7;
 $darkBlue: #2e6da4;
+$indigo: #03163e;
 $orange: #f0ad4e;
 $red: #d9534f;
+$darkRed: #d43f3a;
 $transWhite: rgba(255, 255, 255, .3);
 
 //fonts:
@@ -18,10 +20,17 @@ $leading-header: 35px;
 
 //mixins:
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin bg-cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 //extends:
@@ -31,17 +40,16 @@ $leading-header: 35px;
 	justify-content: space-around;
 }
 
-// %flex-center{
-// 	display: flex;
-// 	flex-direction: row;
-// 	justify-content: space-evenly;
+//globals
+// * {
+// 	height: 100%;
 // }
 
-//globals
 body {
 	background-color: $darkGreen;
-	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.02) 50%);
-	background-size: 100px 100px;
+	background-image: url('../svg/football-pitch.svg');
+	@include bg-cover;
+	background-repeat: no-repeat;
 	margin: 0 auto;
 	font-size: $body-font-size;
 	font-family: $condensed-font;
@@ -56,13 +64,14 @@ body {
 	}
 
 	h2, h4, h5 {
-		font-family: $condensed-font;
 		margin: 0;
-		color: $blue;
+		color: $red;
 	}
 
 	h3 {
 		color: $orange;
+		margin-bottom: 0;
+		font-weight: bolder;
 	}
 
 	p.main {
@@ -94,7 +103,7 @@ body {
  		bottom: 0;
  		left: 0;
  		width: 100%;
- 		background-color: $blue;
+ 		background-color: $red;
  		@extend %flex-shared;
 
  		a:link, a:visited {
@@ -104,7 +113,7 @@ body {
  		}
 
  		a:hover {
- 			color: $darkBlue;
+ 			color: $white;
  		}
 	}
 }
@@ -159,6 +168,7 @@ body {
 
 	.main-content {
 		@extend %flex-shared;
+		margin-top: 25px;
 	}
 
 	.list-group-item {
@@ -189,13 +199,15 @@ body {
 	}
 
 	.teamName {
+		font-family: $wide-font;
 		color: $grey;
 		margin-bottom: 25px;
+		font-size: 1.2em;
 	}
 
 	.card {
-		text-transform: uppercase;
-		font-family: $wide-font;
+		text-transform: capitalize;
+		font-family: $condensed-font;
 		font-size: 20px;
 		line-height: $leading-header;
 	}
@@ -220,6 +232,9 @@ body {
 
 ///Media Queries
 @media screen and (max-width : 991px) {
+	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.02) 50%) 100px 100px;
+	background-size: 100px 100px;
+
 	form {
 		width: 100%;
 	}
@@ -227,13 +242,6 @@ body {
 	div.right{
 		display:none;
 	}
-}
-
-//ipad width vertical
-@media screen and (max-width : 768px) {
-	// .App {
-	// 	width: 80%;
-	// }
 }
 
 @media screen and (max-width : 1136px) {
