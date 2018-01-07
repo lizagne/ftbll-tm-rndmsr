@@ -9,8 +9,8 @@ This is the technical project set on our penultimate day at the Coding Fellowshi
 
 Alternatively view the live app here: http://lizagne.uk/ftbll-tm-rndmsr/
 
-## Tecnologies Used
-React, Redux, JSX, CSS, SASS, gulp, CSS animations, Git
+## Tecnologies and skills used
+React, Redux, JSX, JavaScript, HTML, SASS, gulp, CSS animations, Git, Wireframing.
 
 ## The brief
 The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names.
