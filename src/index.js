@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import App from './components/App';
-
+import './css/style.min.css'
 import { Provider } from 'react-redux';
 
 //import Reducers to then combine together:

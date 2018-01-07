@@ -10,7 +10,7 @@ const teamReducer = (state = [[],[]], action) => {
             teams.push(action.payload.teamA);
             teams.push(action.payload.teamB);
 
-            // The Object.assign() method is used to copy the values of all properties from one or more source objects to a target object. It will return the target object.    
+            // The Object.assign() method is used to copy the values of all properties from one object to a target object. It will return the target object.    
             return Object.assign({ }, state, {
                 teams: teams
             }); }

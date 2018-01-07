@@ -1,23 +1,11 @@
 import * as constants from '../data/Constants';
-// import { updateName } from '../actions/ActionCreators';
-
-// const updateName = (state, {name, id}) => {
-
-//     return state.update('name', name => name.map(n => {
-//         if(n.get('id') === id) {
-//             return n.set('name', name);
-//         }
-//         return n;
-//     }))
-
-// }
 
 const playersReducer = (state = [], action) => {
     
     switch(action.type) {
      
         case constants.ADD_PLAYER:
-            action.payload.id = Date.now();
+            action.payload.id = Date.now(); //use a milisecond iterator as the unique key
            
             let newState = [...state, action.payload];
             return newState;  

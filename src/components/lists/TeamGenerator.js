@@ -16,7 +16,7 @@ class TeamGenerator extends Component {
     //event handler for the team generation button
     onClick = () => {
         this.props.generateTeam();
-        this.setState({display: true});    
+        this.setState({ display: true });    
     }
 
     //this is the event handler for resetting
@@ -36,7 +36,7 @@ class TeamGenerator extends Component {
             return (<div className="card" key={ idx }><p>{ player.name.length >= 20 ? player.name.slice(0, 19) + "..." : player.name }</p></div>)
         })
             teamListB = teamListB.teams[1].map((player, idx) => {
-            return (<div className="card" key={ idx }><p>{ player.name.length >= 15 ? player.name.slice(0, 19) + "..." : player.name }</p></div>)
+            return (<div className="card" key={ idx }><p>{ player.name.length >= 20 ? player.name.slice(0, 19) + "..." : player.name }</p></div>)
         })
     }
 

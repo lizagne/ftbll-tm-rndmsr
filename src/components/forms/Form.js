@@ -8,6 +8,7 @@ class Form extends Component {
 
         this.onSubmit = this.onSubmit.bind(this);
 
+        //changing the intial state to include formerrors and validation, this is from a tutorial about React Form Validation.
         this.state = {
             name: '',
             formErrors: { name: '' },
