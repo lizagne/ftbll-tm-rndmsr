@@ -1,5 +1,5 @@
 //set up colors:
-$darkGreen: #549f0e;
+$darkGreen: #23460e;
 $grey: #333;
 $white: #fff;
 $blue: #337ab7;
@@ -147,10 +147,15 @@ body {
 		padding: 20px;
 	}
 
+	.form-wrapper {
+		height: 285px;
+	}
+
 	.input-group {
 		@extend %flex-shared;
 		margin: 0 auto;
 		width: 100%;
+		// height: 100px;
 	}
 
 	.input {
@@ -163,7 +168,8 @@ body {
 		color: $red;
 		font-size: 12px;
 		line-height: 14px;
-		margin-top: 5px;
+		margin-top: 10px;
+		width: 60%;
 	}
 
 	.main-content {
