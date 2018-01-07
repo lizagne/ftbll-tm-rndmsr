@@ -57,11 +57,14 @@ Things TODO:
 3. Refactor a lot of the code
 5. Try to put the functionality for the randomising into a smaller function from lodash - called _.shuffle
 
-### Checklist
-1. Check accessibility and responsiveness when the project is nearing the end.
-2. Testing with friends, family and unit testing
-3. Write up how to run it on another machine
-4. Send supporting documentation
+### Redux and changing state
+I decided not to use Immutable for changing the object state. I found the spread syntax far easier to work with and understand also using the Object.assign() method which is used to copy the values of all properties from one object to a target object . 
+After following a lot of tutorials I made a detailed list of the steps to take. I like the approach of making a constants.js component which holds the names of the actions, this allowed me to easily find all usages of that constant across the project. This method also prevents you from introducing typos. I then moved onto making the Action Creators. I find these two steps easy to understand and follow so as I was struggling with making anything work on the app, I decided to write up all the actions that I knew that I needed. So I started off each component with notes of what I needed to make. This helped me to know where I was and come back to it at another time.
+The biggest problem I found was that once I started working with Redux, it took quite a while to figure out all the errors and actually see the app working again. This was very frustrating and I find it hard not seeing any good results for such a long time. 
+
+Another notable difference I learnt about was using mapDispatch and mapStateToProps all together and connecting the App rather than containing other elements. This felt like cheating a little bit, but this helped me a lot, seeing one section of the app all in one place.
+I would like to refactor this for the future to be able to be in their own components, so they can be resuable in other apps in the future.
+
 
 ## Testing
 I made the last minute decision to change the background image to an SVG to make the app more engaging, though SVG's are heavy on code. I used Google Dev Tools to check on it's performance. The speed was under 4 secs to load, which does seem quite a long time, but when I took out the SVG background the loading time was the same, so I decided that I should try and refactor instead.
@@ -71,7 +74,9 @@ Throughout the build I used a third party server to test the build on a live pag
 I have been using Chrome primarily, but have also tested it on Firefox and Safari, Redux dev tools needed to be installed, but then the app worked fine on both.
 
 ## Validation and Error Handling
-I am pleased that I was able to get a bit of form validation in. Firstly the min and max length of the input had to be limited because otherwise the user could keep on typing. I kept a upper limit to 30 characters but also for the final output, I wrote a ternary expression which sliced the string at 20 characters and concatenated elipses on the end, for extra long names:
+I am pleased that I was able to get a bit of form validation in. I practiced form validation using a React Form Validation app, which has a repo on here.
+
+Firstly the min and max length of the input had to be limited because otherwise the user could keep on typing. I kept a upper limit to 30 characters but also for the final output, I wrote a ternary expression which sliced the string at 20 characters and concatenated elipses on the end, for extra long names:
 ``
 player.name.length >= 20 ? player.name.slice(0, 19) + "..." : player.name 
 ``
@@ -91,6 +96,7 @@ I also really spent a lot of time trying to refactor the randomising code using 
 
 I think I would have liked to have properly completed the 1st advanced feature, which was to have support for n-a-side, where a list of any length can be split into two teams. The app can do this from between 4 and n amount of team players, but I felt that I got there by luck rather than choice.
 
+Although I'm generally pleased with the overall look and simple functionality of the app, I would like to continue refactoring the code, not using a for loop in the 
 
 
 
