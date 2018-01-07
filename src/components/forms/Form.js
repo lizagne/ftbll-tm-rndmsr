@@ -81,7 +81,7 @@ class Form extends Component {
 
                 </div>
 
-                <div className="error-wrapper col-md-6 col-md-offset-4">
+                <div className="error-wrapper col-sm-12 col-md-6 col-md-offset-3 ">
                     <FormErrors formErrors={ this.state.formErrors } />
                 </div> 
 

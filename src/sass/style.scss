@@ -169,7 +169,7 @@ body {
 		font-size: 12px;
 		line-height: 14px;
 		margin-top: 10px;
-		width: 60%;
+		// width: 80%;
 	}
 
 	.main-content {
@@ -238,15 +238,22 @@ body {
 
 ///Media Queries
 @media screen and (max-width : 991px) {
-	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.02) 50%) 100px 100px;
-	background-size: 100px 100px;
-
 	form {
 		width: 100%;
 	}
 
-	div.right{
+	div.right {
 		display:none;
+	}
+}
+
+@media screen and (max-width : 768px) {
+	.App div.form-wrapper {
+		height: 100px;
+	}
+
+	footer a {
+		font-size: 60%;
 	}
 }
 

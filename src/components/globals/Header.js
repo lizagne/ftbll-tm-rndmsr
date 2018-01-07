@@ -12,7 +12,7 @@ const Header = () => (
             	Ftbll Tm Rndmsr 
             	<img src={ logo } className="App-logo1" alt="football-logo" />
 	        </h1>
-	        <h2>Pick your teams</h2>
+	        <h2>Find your teams</h2>
             <p className="lead"> Enter at least 4 names to generate two random teams.</p>
 
         </header>

@@ -89,8 +89,7 @@ body {
     color: #d9534f;
     font-size: 12px;
     line-height: 14px;
-    margin-top: 10px;
-    width: 60%; }
+    margin-top: 10px; }
   .App .main-content {
     margin-top: 25px; }
   .App .list-group-item {
@@ -136,12 +135,16 @@ body {
     transform: rotate(360deg); } }
 
 @media screen and (max-width: 991px) {
-  background-image: linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%) 100px 100px;
-  background-size: 100px 100px;
   form {
     width: 100%; }
   div.right {
     display: none; } }
+
+@media screen and (max-width: 768px) {
+  .App div.form-wrapper {
+    height: 100px; }
+  footer a {
+    font-size: 60%; } }
 
 @media screen and (max-width: 1136px) {
   .App-logo1 {
