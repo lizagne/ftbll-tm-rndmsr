@@ -29,6 +29,8 @@ class Player extends Component {
                 <input 
                     className="input" 
                     type="text" 
+                    minLength={ 3 }
+                    maxLength={ 20 }
                     value={ this.props.data.name } 
                     onChange={ event => this.onNameEdit(event, this.props.data) }
                 /> :
