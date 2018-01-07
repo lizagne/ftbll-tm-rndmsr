@@ -64,7 +64,7 @@ Things TODO:
 4. Send supporting documentation
 
 ## Testing
-I made the last minute decision to change the background image to an SVG to make the app more engaging, though SVG's are heavy on code. I used Google Dev Tools to check on it's performance. The speed ...
+I made the last minute decision to change the background image to an SVG to make the app more engaging, though SVG's are heavy on code. I used Google Dev Tools to check on it's performance. The speed was under 4 secs to load, which does seem quite a long time, but when I took out the SVG background the loading time was the same, so I decided that I should try and refactor instead.
 
 Throughout the build I used a third party server to test the build on a live page so that I could then test on actual devices, Ipad and Iphone. I realised that I wanted to show the basic and most important information and inputs on one screen, so for smaller devices I turned off the display of certain elements.
 
@@ -79,9 +79,18 @@ I created a FormErrors component to handle when a user puts in special character
 ``
 nameValid = value.match(/^[a-zA-Z0-9 \-']{3,30}$/);
 ``
-
 ## Styling
 I used Bootstrap as a base so I could spend more time on the Javascript side of the app and also to make use of the column layouts, which I now feel very confident with. These helped me a lot when building for devices.
 
 I wanted to spend time in getting the app to be designed for responsiveness. So I made use of SASS by using gulp tasks to minify, convert and rename scss to the min.css file. Using SASS I was able to better organise, what proved to be a lot of css styling. I used mixins, extends and variables to reuse styles throughout the app.
+
+## What I would like to do for the future:
+I am disappointed that I wasn't able to get the balancing to work. Also that the edit button doesn't toggle properly even though it works. I spent a lot of time trying to fix it but in the end decided to get the MVP of the app to work over the advanced features.
+
+I also really spent a lot of time trying to refactor the randomising code using Math.random to use the lodash shuffle method, but wasn't able to, so would like to study Lodash further to see if that can be done. I have watched a lecture on the subject and it seems like it's an important library for JavaScript.
+
+I think I would have liked to have properly completed the 1st advanced feature, which was to have support for n-a-side, where a list of any length can be split into two teams. The app can do this from between 4 and n amount of team players, but I felt that I got there by luck rather than choice.
+
+
+
 
