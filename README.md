@@ -1,52 +1,33 @@
 # Football 5-a-side Random Team Picker Project
 This is the technical project set on our penultimate day at the Coding Fellowship to make for January 7th
 
+## To run the project:
+* NPM and a Command Line tool is needed.
+* git clone this repo
+* run npm install or npm i
+* run npm start to view on localhost:3000
+
+Alternatively view the live app here: http://lizagne.uk/ftbll-tm-rndmsr/
+
 ## tecnologies used
-react, redux, jsx, css, sass, gulp, css animations, git
-
-
+React, Redux, JSX, CSS, SASS, gulp, CSS animations, Git
 
 ## The brief
-
 The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names.
 It's up to you how you implement this, with JavaScript, PHP, as a web page, or as an app.
 
 ### Advanced features might include:
-
     1. support for n-a-side, where a list of any length can be split into two teams
     2. support for balancing of the teams, where some measure of each player's strength is used to allocate teams fairly
 
-
-### Some suggestions
-
-I would suggest you look to demonstrate clear thinking and good quality code.
-
-If your tool requires a particular environment to run (e.g. Node or PHP) 
-then this should be documented, or provided (e.g. Vagrantfile). 
-
-In short: I shouldn't struggle to get it working on my local machine.
-
+## My initial notes
+The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so initially I need:
+1. to have an input where the user can enter 10 names
+2. It should have a Generate Teams button which when pressed will places the 10 names into 5-a-side teams.
 
 ## Wireframes:
-
 ![Demo](https://user-images.githubusercontent.com/26763021/34521518-f97e4088-f085-11e7-937b-10b21d12942a.png)
 ![Demo](https://user-images.githubusercontent.com/26763021/34521517-f962918a-f085-11e7-9778-cb628c70ce69.png)
-
-
-# My initial notes
-
-I would like to create the app with options for n-a-side teams, also for randomly picking team names, and creating top-trump style skills of players so that they can be balanced against eachother.
-
-Need to do some research into what apps are out there and what elements it would need.
-
-Initial names of the app could be: FTBLL-TM-Pckr, The beautiful game team picker (sub header), need to look up words that are synonymous with Football!
-
-The MVP is randomly picking a 5-a-sdie football team from a list of 10 names, so initially I need:
-
-1. to have an input where the user can enter 10 names, (should the names default to 10 initially or be empty? 
-    -should this be single line? or have 10 spaces or 10 inputs? or a large text box that fits 10 names?
-
-2. It should have a button that has 'Generate Team' or 'Pick your team' on it, which when pressed will places the 10 names into 5 a side teams.
 
 ### Additional Notes on Saturday 23rd after 1st draft of Wireframe (see pdf attached) initial set up and first changes:
 1. have set up SASS on my project
@@ -82,11 +63,23 @@ Things TODO:
 3. Write up how to run it on another machine
 4. Send supporting documentation
 
+## Testing
+I made the last minute decision to change the background image to an SVG to make the app more engaging, though SVG's are heavy on code. I used Google Dev Tools to check on it's performance. The speed ...
+
+Throughout the build I used a third party server to test the build on a live page so that I could then test on actual devices, Ipad and Iphone. I realised that I wanted to show the basic and most important information and inputs on one screen, so for smaller devices I turned off the display of certain elements.
+
+I have been using Chrome primarily, but have also tested it on Firefox and Safari, Redux dev tools needed to be installed, but then the app worked fine on both.
+
+## Validation and Error Handling
+I am pleased that I was able to get a bit of form validation in. Firstly the min and max length of the input had to be limited because otherwise the user could keep on typing. I kept a upper limit to 30 characters but also for the final output, I wrote a ternary expression which sliced the string at 20 characters and concatenated elipses on the end, for extra long names:
+``
+player.name.length >= 20 ? player.name.slice(0, 19) + "..." : player.name 
+``
+I created a FormErrors component to handle when a user puts in special characters which I have disallowed. But then whilst looking on StackOverflow I saw that someone made the point that some names have hyphens in them and apostrophes, also spaces for surnames, so the code now includes these things, so alphanumeric with spaces, hyphens and apostrophes and the input must be between 3 and 30 characters long:
+``
+nameValid = value.match(/^[a-zA-Z0-9 \-']{3,30}$/);
+``
 
 ## Styling
-There could be a background of a birds-eye view of a football pitch - so green grass with white stripes...can this be done with CSS? Ideas: https://codepen.io/eyecandy91/pen/dXLjNG  https://codepen.io/oloman/pen/ynJcl  https://codepen.io/paulnoble/pen/PwOxOY. With CSS I can easily do stripes like this: https://thumb1.shutterstock.com/display_pic_with_logo/3910382/568052803/stock-vector-football-pitch-icon-on-white-background-football-pitch-sign-symbol-568052803.jpg.
-
-Football type fonts: https://www.designboom.com/wp-content/uploads/2014/07/dutch_home.gif
-
-possible Google font: https://fonts.google.com/specimen/Bungee+Inline  https://fonts.google.com/specimen/Anton  
+I wanted to spend time in getting the app to be designed for responsiveness. So I made use of SASS by using gulp tasks to minify, convert and rename scss to the min.css file. Using SASS I was able to better organise, what proved to be a lot of css styling. I used mixins, extends and variables to reuse styles throughout the app.
 
