@@ -52,18 +52,18 @@ class TeamGenerator extends Component {
                     <span className="col-sm-12" > 
                     { this.state.display === true ? 
 
-                        <div className="teamOutput">
+                        <div className="teamOutput container-fluid">
+                            <div className="row">
+                                <div className="col-sm-12 col-md-6 col-lg-6">
+                                    <h2 className="teamName">Team One</h2>
+                                    <div>{ teamListA }</div>
+                                </div>
 
-                            <div className="col-md-6">
-                                <h2 className="teamName">Team One</h2>
-                                <div>{ teamListA }</div>
+                                <div className="col-sm-12 col-md-6 col-lg-6">
+                                    <h2 className="teamName">Team Two</h2>
+                                    <div>{ teamListB }</div>
+                                </div>
                             </div>
-
-                            <div className="col-md-6">
-                                <h2 className="teamName">Team Two</h2>
-                                <div>{ teamListB }</div>
-                            </div>
-
                         </div> : null }  
 
                     </span>

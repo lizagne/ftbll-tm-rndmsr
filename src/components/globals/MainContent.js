@@ -4,7 +4,7 @@ import React from 'react';
 
 const MainContent = () => (
 	<div className="col-md-12">
-	    <div className="col-md-4 col-md-offset-1">
+	    <div className="col-md-4 col-md-offset-1 col-sm-12 left">
 	        <h3>Build your team:</h3>
 	        <p className="main"> You can edit or delete a player.</p>
 	    </div>

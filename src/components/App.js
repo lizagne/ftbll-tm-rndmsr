@@ -28,9 +28,13 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="col-sm-6 col-sm-offset-3">
-                    <Header />
-                </div> 
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-3 col-sm-12">
+                            <Header />
+                        </div> 
+                    </div>
+                </div>        
                 
                 <div>    
                     <Form addPlayer={ this.props.addPlayer } />

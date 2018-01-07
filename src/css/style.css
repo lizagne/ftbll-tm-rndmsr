@@ -52,6 +52,8 @@ body {
   body .clear {
     clear: both;
     height: 60px; }
+  body .row {
+    width: 100%; }
   body footer {
     position: fixed;
     height: 60px;
@@ -88,7 +90,7 @@ body {
     margin: 25px auto;
     padding: 20px; }
   .App .form-wrapper {
-    height: 300px; }
+    height: 100px; }
   .App .input-group {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -153,21 +155,51 @@ body {
     transform: rotate(360deg); } }
 
 @media screen and (max-width: 991px) {
-  form {
-    width: 100%; }
+  .App .form-wrapper {
+    height: 105px; }
+  .App .input-group {
+    width: 80%; }
   div.right {
     display: none; } }
 
 @media screen and (max-width: 768px) {
-  .App div.form-wrapper {
-    height: 150px; }
+  .App .lead {
+    width: 100%; }
+  .App .form-wrapper {
+    height: 105px; }
+  .App .input-group {
+    width: 100%; }
   footer a {
-    font-size: 60%; } }
+    font-size: 80%; } }
 
-@media screen and (max-width: 1244px) {
-  .team-one {
-    width: 100%; } }
-
-@media screen and (max-width: 1136px) {
+@media screen and (max-width: 375px) {
+  body {
+    background-color: #23460e;
+    background-image: none; }
+  .App .lead {
+    margin: 10px 0 5px 0;
+    line-height: 18px; }
   .App-logo1 {
-    display: none; } }
+    display: none; }
+  .App-logo {
+    width: 30px; }
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 20px; }
+  .App .teams {
+    padding: 10px; }
+  .App .teamOutput {
+    margin-top: 20px; }
+  .left {
+    display: none; }
+  .App {
+    padding: 10px; }
+  .App .form-wrapper {
+    height: 135px; }
+  .form-errors {
+    width: 100%; }
+  a.footer.git, a.footer.develop {
+    display: none; }
+  a.footer.liz {
+    visibility: visible; } }
