@@ -92,6 +92,8 @@ body {
     margin-top: 10px; }
   .App .main-content {
     margin-top: 25px; }
+  .App .list-group {
+    margin-bottom: 5px; }
   .App .list-group-item {
     text-transform: capitalize;
     display: flex;
@@ -142,7 +144,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .App div.form-wrapper {
-    height: 100px; }
+    height: 150px; }
   footer a {
     font-size: 60%; } }
 

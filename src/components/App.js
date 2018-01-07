@@ -20,8 +20,12 @@ import {
 class App extends Component {
 
     state = {
-        players: []
+        players: [],
+        isEditing: false
     }
+
+    toggleEditingAt = index =>
+    this.toggleGuestPropertyAt("isEditing", index);
 
     render() {
         return (
@@ -40,16 +44,17 @@ class App extends Component {
                 </div>    
 
                 <div className="col-md-12">
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <TeamList
                             players={ this.props.players } 
                             addPlayer={ this.props.addPlayer } 
+                            toggleEditingAt={ this.toggleEditingAt }
                             editPlayer={ this.props.editPlayer } 
                             deletePlayer={this.props.deletePlayer } 
                         />
                     </div>
 
-                    <div className="col-md-6">
+                    <div className="col-md-8">
                         <TeamGenerator
                             generateTeam={ this.props.generateTeam } 
                             teams={ this.props.teams } 

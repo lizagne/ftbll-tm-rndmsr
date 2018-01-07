@@ -54,13 +54,13 @@ class TeamGenerator extends Component {
                         // <h2>Your Teams</h2>
                         <div className="teamOutput">
 
-                            <div>
+                            <div className="col-sm-6">
                                 <h2 className="teamName">Team One</h2>
                                 <div>{ teamListA }</div>
                             </div>
 
 
-                            <div>
+                            <div className="col-sm-6">
                                 <h2 className="teamName">Team Two</h2>
                                 <div>{ teamListB }</div>
                             </div>

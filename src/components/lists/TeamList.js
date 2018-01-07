@@ -8,6 +8,8 @@ const TeamList = props =>  (
 			data={ player } 
 			key={ player.id } 
 			editPlayer={ props.editPlayer }
+			// isEditing={ guest.isEditing }
+			// handeToggleEditing={ () => props.toggleEditingAt(index) }
 			updateName={ props.updateName }
             deletePlayer={ props.deletePlayer } 
             addPlayer={ props.addPlayer } 
