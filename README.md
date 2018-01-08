@@ -9,8 +9,8 @@ This is the technical project set on our penultimate day at the Coding Fellowshi
 
 Alternatively view the live app here: http://lizagne.uk/ftbll-tm-rndmsr/
 
-## Tecnologies Used
-React, Redux, JSX, CSS, SASS, gulp, CSS animations, Git
+## Tecnologies and skills used
+React, Redux, JSX, JavaScript, HTML, SASS, gulp, CSS animations, Git, Wireframing.
 
 ## The brief
 The exercise is to create a tool which randomly picks 5-a-side football teams from a list of 10 names.
@@ -65,6 +65,17 @@ The biggest problem I found was that once I started working with Redux, it took 
 Another notable difference I learnt about was using mapDispatch and mapStateToProps all together and connecting the App rather than containing other elements. This felt like cheating a little bit, but this helped me a lot, seeing one section of the app all in one place.
 I would like to refactor this for the future to be able to be in their own components, so they can be resuable in other apps in the future.
 
+## Screenshots of mobile version:
+![Demo](https://user-images.githubusercontent.com/26763021/34663847-c937bfc0-f450-11e7-9094-c2c29c7b2e15.png)
+![Demo](https://user-images.githubusercontent.com/26763021/34663846-c91c4e8e-f450-11e7-8cf9-4a504175f7aa.png)
+
+## Screenshot of desktop version:
+![Demo](https://user-images.githubusercontent.com/26763021/34664167-7bc172f2-f452-11e7-84a1-ee591951cfbc.png)
+
+## Screenshot of tablet version:
+![Demo](https://user-images.githubusercontent.com/26763021/34664518-3166bb3e-f454-11e7-8866-c053c027f939.png)
+
+![Demo](https://user-images.githubusercontent.com/26763021/34664517-314fbf1a-f454-11e7-8314-ca9facaee6d7.png)
 
 ## Testing
 I made the last minute decision to change the background image to an SVG to make the app more engaging, though SVG's are heavy on code. I used Google Dev Tools to check on it's performance. The speed was under 4 secs to load, which does seem quite a long time, but when I took out the SVG background the loading time was the same, so I decided that I should try and refactor instead.
