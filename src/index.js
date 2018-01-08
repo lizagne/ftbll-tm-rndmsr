@@ -15,12 +15,11 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 //set up React devtools to help with development
-const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+// const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
 //compose is used to apply several store enhancers in a row,
 const enhancer = compose(
     applyMiddleware(thunk),
-    devTools
 );
 
 //The state produced by combineReducers() namespaces the states of each reducer under their keys as passed to combineReducers()
