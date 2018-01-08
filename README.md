@@ -69,6 +69,10 @@ I would like to refactor this for the future to be able to be in their own compo
 ![Demo](https://user-images.githubusercontent.com/26763021/34663847-c937bfc0-f450-11e7-9094-c2c29c7b2e15.png)
 ![Demo](https://user-images.githubusercontent.com/26763021/34663846-c91c4e8e-f450-11e7-8cf9-4a504175f7aa.png)
 
+## Screenshot of desktop version:
+![Demo](https://user-images.githubusercontent.com/26763021/34664167-7bc172f2-f452-11e7-84a1-ee591951cfbc.png)
+
+
 ## Testing
 I made the last minute decision to change the background image to an SVG to make the app more engaging, though SVG's are heavy on code. I used Google Dev Tools to check on it's performance. The speed was under 4 secs to load, which does seem quite a long time, but when I took out the SVG background the loading time was the same, so I decided that I should try and refactor instead.
 
