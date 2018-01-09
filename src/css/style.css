@@ -163,6 +163,10 @@ body {
     display: none; } }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 100%) no-repeat;
+    background-size: cover; }
   .App .lead {
     width: 100%; }
   .App .form-wrapper {

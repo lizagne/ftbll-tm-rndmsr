@@ -274,7 +274,14 @@ body {
 	}
 }
 
+//ipad
 @media screen and (max-width : 768px) {
+	body {
+		background-image: none;
+		background: linear-gradient(to bottom, rgba(33,37,50,1) 0%, rgba(20,25,40,1) 13%, rgba(5,11,28,1) 26%, rgba(5,11,28,1) 44%, rgba(37,70,31,1) 44%, rgba(37,70,31,1) 100%) no-repeat;
+		background-size: cover;
+	}
+
 	.App .lead {
 		width: 100%;
 	}

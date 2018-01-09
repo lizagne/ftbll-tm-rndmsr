@@ -29,8 +29,8 @@ class Form extends Component {
 
     switch(fieldName) {
       case 'name':
-        nameValid = value.match(/^[a-zA-Z0-9 \-']{3,30}$/);
-        fieldValidationErrors.name = nameValid ? '' : ' can only include letters, numbers, hyphens and apostrophes and must be between 3 and 30 characters long';
+        nameValid = value.match(/^[a-zA-Z \-']{3,30}$/);
+        fieldValidationErrors.name = nameValid ? '' : ' can only include letters, hyphens, apostrophes and must be between 3 and 30 characters long';
         break;
 
       default:
