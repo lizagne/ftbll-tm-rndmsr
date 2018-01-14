@@ -1,7 +1,7 @@
 {
   "name": "five-a-side",
   "version": "0.1.0",
-  "homepage": "http://lizagne.uk/ftbll-tm-rndmsr-1",
+  "homepage": "http://lizagne.uk/ftbll-tm-rndmsr",
   "private": true,
   "dependencies": {
     "gulp": "^3.9.1",

@@ -170,7 +170,7 @@ body {
 @media screen and (max-width: 768px) {
   body {
     background-image: none;
-    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 61%, #1d3c1e 61%, #1d3c1e 74%, #25461f 74%, #25461f 85%, #25461f 86%, #1d3c1e 86%, #1d3c1e 86%, #25461f 100%) no-repeat;
+    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 61%, #1d3c1e 61%, #1d3c1e 74%, #25461f 74%, #25461f 85%, #25461f 86%, #1d3c1e 86%, #1d3c1e 86%, #25461f 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -188,7 +188,7 @@ body {
 @media screen and (max-width: 375px) {
   body {
     background-image: none;
-    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 61%, #1d3c1e 61%, #1d3c1e 74%, #25461f 74%, #25461f 85%, #25461f 86%, #1d3c1e 86%, #1d3c1e 86%, #25461f 100%) no-repeat;
+    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 61%, #1d3c1e 61%, #1d3c1e 74%, #25461f 74%, #25461f 85%, #25461f 86%, #1d3c1e 86%, #1d3c1e 86%, #25461f 100%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
