@@ -3,8 +3,12 @@ body form, body footer, .App .container, .App .input-group, .App .main-content, 
   flex-direction: row;
   justify-content: space-around; }
 
+html {
+  height: 100%;
+  min-height: 100%; }
+
 body {
-  background-color: #23460e;
+  background-color: #21411f;
   background-image: url("../svg/football-pitch.svg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,7 +20,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 2px;
   line-height: 25px;
-  padding-bottom: 160px; }
+  padding-bottom: 160px;
+  min-height: 100%; }
   body h1 {
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 2px;
@@ -165,8 +170,12 @@ body {
 @media screen and (max-width: 768px) {
   body {
     background-image: none;
-    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 100%) no-repeat;
-    background-size: cover; }
+    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 61%, #1d3c1e 61%, #1d3c1e 74%, #25461f 74%, #25461f 85%, #25461f 86%, #1d3c1e 86%, #1d3c1e 86%, #25461f 100%) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%; }
   .App .lead {
     width: 100%; }
   .App .form-wrapper {
@@ -178,8 +187,13 @@ body {
 
 @media screen and (max-width: 375px) {
   body {
-    background-color: #23460e;
-    background-image: none; }
+    background-image: none;
+    background: linear-gradient(to bottom, #212532 0%, #141928 13%, #050b1c 26%, #050b1c 44%, #25461f 44%, #25461f 61%, #1d3c1e 61%, #1d3c1e 74%, #25461f 74%, #25461f 85%, #25461f 86%, #1d3c1e 86%, #1d3c1e 86%, #25461f 100%) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%; }
   .App .lead {
     margin: 10px 0 5px 0;
     line-height: 18px; }

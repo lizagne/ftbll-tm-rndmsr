@@ -31,19 +31,19 @@ class Player extends Component {
                         className="input" 
                         type="text" 
                         minLength={ 3 }
-                        maxLength={ 20 }
+                        maxLength={ 30 }
                         value={ this.props.data.name } 
                         onChange={ event => this.onNameEdit(event, this.props.data) }
                     /> 
                     <div className="buttons">
                         <button 
-                            className="btn btn-warning btn" 
+                            className="btn btn-warning btn-sm" 
                             type="edit"
                             onClick={ () => { this.toggleEditMode() } }><i className="fa fa-pencil" aria-hidden="true"></i> Save
                         </button>
 
                         <button 
-                            className="btn btn-danger btn" 
+                            className="btn btn-danger btn-sm" 
                             onClick= { () => { this.removePlayer(this.props.data) } }><i className="fa fa-trash" aria-hidden="true"></i> Delete
                         </button> 
                     </div>
@@ -55,13 +55,13 @@ class Player extends Component {
                     <li className="list-group-item">{ this.props.data.name }
                         <div className="buttons">
                             <button 
-                                className="btn btn-warning btn" 
+                                className="btn btn-warning btn-sm" 
                                 type="edit" 
                                 onClick={ () => { this.toggleEditMode() } }><i className="fa fa-pencil" aria-hidden="true"></i> Edit
                             </button>
 
                             <button 
-                                className="btn btn-danger btn" 
+                                className="btn btn-danger btn-sm" 
                                 onClick= { () => { this.removePlayer(this.props.data) } }><i className="fa fa-trash" aria-hidden="true"></i> Delete
                             </button> 
                         </div>
