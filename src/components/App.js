@@ -36,7 +36,7 @@ class App extends Component {
             <div className="App">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 col-sm-12">
+                        <div className="col-lg-6 col-lg-offset-3 col-sm-12">
                             <Header />
                         </div> 
                     </div>
@@ -46,12 +46,11 @@ class App extends Component {
                     <Form addPlayer={ this.props.addPlayer } />
                 </div>   
 
-                <div className="col-sm-12">
-                    <MainContent />
-                </div>    
+                <MainContent />
+               
 
-                <div className="col-md-12">
-                    <div className="col-md-4 col-md-offset-1">
+                <div className="col-lg-12">
+                    <div className="col-lg-4 col-lg-offset-1">
                         <TeamList
                             players={ this.props.players } 
                             addPlayer={ this.props.addPlayer } 
