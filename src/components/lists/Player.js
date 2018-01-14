@@ -26,26 +26,42 @@ class Player extends Component {
         return (
             <div className="">
                 { this.state.isEditing === true ? 
-                <input 
-                    className="input" 
-                    type="text" 
-                    minLength={ 3 }
-                    maxLength={ 20 }
-                    value={ this.props.data.name } 
-                    onChange={ event => this.onNameEdit(event, this.props.data) }
-                /> :
+                <div>    
+                    <input 
+                        className="input" 
+                        type="text" 
+                        minLength={ 3 }
+                        maxLength={ 20 }
+                        value={ this.props.data.name } 
+                        onChange={ event => this.onNameEdit(event, this.props.data) }
+                    /> 
+                    <div className="buttons">
+                        <button 
+                            className="btn btn-warning btn" 
+                            type="edit"
+                            onClick={ () => { this.toggleEditMode() } }><i className="fa fa-pencil" aria-hidden="true"></i> Save
+                        </button>
+
+                        <button 
+                            className="btn btn-danger btn" 
+                            onClick= { () => { this.removePlayer(this.props.data) } }><i className="fa fa-trash" aria-hidden="true"></i> Delete
+                        </button> 
+                    </div>
+                </div>    
+
+                :
 
                 <ul className="list-group">
                     <li className="list-group-item">{ this.props.data.name }
                         <div className="buttons">
                             <button 
-                                className="btn btn-warning btn-xs" 
+                                className="btn btn-warning btn" 
                                 type="edit" 
                                 onClick={ () => { this.toggleEditMode() } }><i className="fa fa-pencil" aria-hidden="true"></i> Edit
                             </button>
 
                             <button 
-                                className="btn btn-danger btn-xs" 
+                                className="btn btn-danger btn" 
                                 onClick= { () => { this.removePlayer(this.props.data) } }><i className="fa fa-trash" aria-hidden="true"></i> Delete
                             </button> 
                         </div>

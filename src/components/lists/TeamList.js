@@ -3,14 +3,14 @@ import Player from './Player';
 
 const TeamList = props =>  (
     <div>
-	    { props.players.map(player =>
-		<Player 
-			data={ player } 
-			key={ player.id } 
-			editPlayer={ props.editPlayer }
-			// isEditing={ guest.isEditing }
-			// handeToggleEditing={ () => props.toggleEditingAt(index) }
-			updateName={ props.updateName }
+        { props.players.map(player =>
+        <Player 
+            data={ player } 
+            key={ player.id } 
+            editPlayer={ props.editPlayer }
+            // isEditing={ guest.isEditing }
+            // handeToggleEditing={ () => props.toggleEditingAt(index) }
+            updateName={ props.updateName }
             deletePlayer={ props.deletePlayer } 
             addPlayer={ props.addPlayer } 
         />) }                                               

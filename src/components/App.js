@@ -18,9 +18,15 @@ import {
 class App extends Component {
 
     state = {
-        players: [],
-        isEditing: false
-    }
+        pendingGuest: "",
+        guests: [
+            {
+                name: 'Helen',
+            },
+        ]
+    };
+
+    
 
     toggleEditingAt = index =>
     this.toggleGuestPropertyAt("isEditing", index);
