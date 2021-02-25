@@ -7,8 +7,6 @@ This is the technical project set on our penultimate day at the Coding Fellowshi
 * run npm install or npm i
 * run npm start to view on localhost:3000
 
-Alternatively view the live app here: http://lizagne.uk/ftbll-tm-rndmsr/
-
 ## Tecnologies and skills used
 React, Redux, JSX, JavaScript, HTML, SASS, gulp, CSS animations, Git, Wireframing.
 
